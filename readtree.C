@@ -270,17 +270,28 @@ void readtree()
   //c5->cd();
   //hrap->Draw();
 
-  
- /* Int_t n = 20;
-  Double_t x[n], y[n];
-  for (Double_t i=0.5; i<=1.5; i+=(1.0/n)) 
-  {
-     x[i] = i;
-     y[i] = myfunc(i);
-  }
-  TGraph *gr1 = new TGraph (n, x, y);
-  TCanvas *c1 = new TCanvas("c1","Fit vs Real",200,10,800,600);
-  */
+
+
+
+  /*********************************************************************
+    _____________________________________________
+    |       DRAWING THE GRAPHS                  |
+    |___________________________________________|
+
+  *********************************************************************/
+
+
+  TCanvas *c1 = new TCanvas("c1","A Simple Graph Example",200,10,500,300);
+   Double_t x[100], y[100];
+   Int_t n = 20;
+   for (Int_t i=0;i<n;i++) {
+     x[i] = i*0.1;
+     y[i] = 10*sin(x[i]+0.2);
+   }
+   TGraph* gr = new TGraph(n,x,y);
+   gr->Draw("AC*");
+
+
 
 }
 
