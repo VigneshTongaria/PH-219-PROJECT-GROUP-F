@@ -8,28 +8,52 @@
 	}
     return sum*1.0/n;
 }
-Double_t var(Double_t *x, Int_t n)
-{
-    Double_t mu=mean(x,n);
-    Double_t sum=0;
-    for(int i=0;i<n;i++)
-    {
-        sum=sum+(x[i]-mu)*(x[i]-mu);
-	}
-    return sum*1.0/n;
-}
-Double_t skew(Double_t *x, Int_t n)
-{
-    Double_t mu=mean(x,n);
-    Double_t sigma=TMath::Sqrt(var(x,n));
-    Double_t sum=0;
-    for(int i=0;i<n;i++)
-    {
-        sum=sum+(x[i]-mu)*(x[i]-mu)*(x[i]-mu);
-	}
-    return sum*1.0/(n*TMath::Power(sigma,1.5));
-}
 */
+
+
+  /*********************************************************************
+    ___________________________________________________________
+    |   DEFINING THE FUNCTIONS FOR VARIANCE AND SKEWNESS      |
+    |_________________________________________________________|
+
+  *********************************************************************/
+
+
+Double_t Q2(Double_t *x, Int_t n, Double_t mu)
+{
+    Double_t sum=0;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            if(i!=j)
+            {
+                sum+=(x[i]-mu)*(x[j]-mu);    
+			}
+	    }
+	}
+    return sum*1.0/(n*(n-1));
+}
+Double_t Q3(Double_t *x, Int_t n, Double_t mu)
+{
+    Double_t sum=0;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            for(int k=0;k<n;k++)
+            {
+                if(i!=j&&j!=k&&k!=i)
+                {
+                    sum+=(x[i]-mu)*(x[j]-mu)*(x[k]-mu) ;   
+			    }
+            }
+	    }
+	}
+    return sum*1.0/(n*(n-1)*(n-2));
+}
+
+
 void readtree()
 {
   
@@ -63,8 +87,9 @@ void readtree()
 
   *********************************************************************/
 
+  char a[]="pytree2040";
   TFile *f=new TFile("13TeV_CR0_RHoff.root");
-  TTree *tree = (TTree*)f->Get("pytree2040");
+  TTree *tree = (TTree*)f->Get(a);
   Int_t entries = tree->GetEntries();
   //cout<<entries<<endl;
 
@@ -91,8 +116,8 @@ void readtree()
   //TCanvas *c3=new TCanvas("c3","Phi",200,10,800,600);
   //TCanvas *c4=new TCanvas("c4","Rapidity",200,10,800,600);
   //TCanvas *c5=new TCanvas("c5","Rap",200,10,800,600);
+  TCanvas *c6=new TCanvas("c6","Mean Transverse Momentum",200,10,800,600);
 
-  //cout<<sum(3,4)<<endl;
 
 
 
@@ -122,8 +147,9 @@ void readtree()
  
 
 
-  TH1D *hmult  = new TH1D("hmult","Multiplicity",100,0,100.0);
-  TH1D *hpT   =  new TH1D("hpT","Transverse Momentum", 100,0,3.0);
+  TH1D *hmult =  new TH1D("hmult","Multiplicity",100,0,100.0);
+  TH1D *hpT   =  new TH1D("hpT","Transverse Momentum", 100,0,2.0);
+  TH1D *hpTm   =  new TH1D("hpTm","Mean Transverse Momentum", 100,0,2.0);
   TH1D *hphi  =  new TH1D("hphi","Phi",100,-5.0,5.0);
   TH1D *heta  =  new TH1D("heta","Rapidity",100,-5.0,5.0);
   TH1D *hrap  =  new TH1D("hrap","Rap",100,-5.0,5.0);
@@ -140,28 +166,88 @@ void readtree()
 
   for(Int_t ii=0; ii<entries; ii++)  
   {//Event loop starts here
+           
         tree->GetEntry(ii);
         Int_t ntrks = ntrack;
         NT[ii]=ntrks;
-        //cout<<ntrks<<endl;
         hmult->Fill(ntrks);
-        for(int i=0; i<ntrks; i++) 
-        {            
-            //Double_t pT1 = pT[i];
-            //hpT->Fill(pT1);
-            //Double_t phi1 = phi[i];
-            //hphi->Fill(phi1);
-            //Double_t eta1 = eta[i];
-            //heta->Fill(eta1);
-            //Double_t rap1 = rap[i];
-            //hrap->Fill(rap1);
+        for(int i=0;i<ntrks;i++)
+        {
+            hpT->Fill(pT[i]);
         }
-        hpT->Fill(TMath::Mean(pT,pT+ntrks));
+        Double_t store=TMath::Mean(pT,pT+ntrks);
+        hpTm->Fill(store);
   }
 
-  //cout<<skew(NT,entries)<<endl;
-  cout<<"Skewness of <pT>: "<<hpT->GetSkewness()<<endl;
-  cout<<"Standard Skewness of <pT>: "<<hpT->GetSkewness()*1.0*hpT->GetMean()/hpT->GetStdDev()<<endl;
+
+
+
+  /*********************************************************************
+    _____________________________________________
+    |   FINDING THE VARIANCE AND SKEWNESS       |
+    |___________________________________________|
+
+  *********************************************************************/
+
+
+  Double_t M=hpTm->GetMean();
+  Double_t q2=0.0;
+  Double_t q3=0.0;
+
+  for(Int_t ii=0; ii<entries; ii++)  
+  {
+        tree->GetEntry(ii);
+        Int_t ntrks = ntrack;
+        NT[ii]=ntrks;
+        hmult->Fill(ntrks);
+        q2+=Q2(pT,ntrks,M);
+        q3+=Q3(pT,ntrks,M);
+  }
+  q2=q2*1.0/entries;
+  q3=q3*1.0/entries;
+
+  cout<<"\n\n"<<a<<"\n\n"<<endl;
+  cout<<"Standardised Skewness of <pT>: "<<q3/TMath::Power(q2,1.5)<<endl;
+  cout<<"Intensive Skewness of <pT>: "<<q3*M/TMath::Power(q2,2)<<endl;
+
+  
+  
+  
+  
+  
+  /*********************************************************************
+    _____________________________________________
+    |   AESTHETICS OF THE HISTOGRAMS            |
+    |___________________________________________|
+
+  *********************************************************************/
+
+  hpT->SetTitle(a);
+  hpT->GetXaxis()->SetTitle("<pT> (GeV)");
+  hpT->GetYaxis()->SetTitle("Count");
+  hpTm->SetTitle(a);
+  hpTm->GetXaxis()->SetTitle("<pT> (GeV)");
+  hpTm->GetYaxis()->SetTitle("Count");
+
+
+
+
+
+    /*********************************************************************
+    _____________________________________________
+    |   FITTING THE HISTOGRAMS                  |
+    |___________________________________________|
+
+  *********************************************************************/
+
+   TF1 *gaus=new TF1("gaus","gaus",-0.5,0.5);
+   gaus->SetParameters(hpTm->GetMaximum(), hpTm->GetMean(), hpTm->GetRMS()); 
+   hpTm->Fit("gaus");
+   TF1 *expo=new TF1("expo","expo",-0.5,0.5);
+   expo->SetParameters(hpT->GetMean(), -hpT->GetMean()); 
+   hpT->Fit("expo");
+
+
 
 
   /*********************************************************************
@@ -175,12 +261,26 @@ void readtree()
   //hmult->Draw();
   c2->cd();
   hpT->Draw();
+  c6->cd();
+  hpTm->Draw();
   //c3->cd();
   //hphi->Draw();
   //c4->cd();
   //heta->Draw();
   //c5->cd();
   //hrap->Draw();
+
+  
+ /* Int_t n = 20;
+  Double_t x[n], y[n];
+  for (Double_t i=0.5; i<=1.5; i+=(1.0/n)) 
+  {
+     x[i] = i;
+     y[i] = myfunc(i);
+  }
+  TGraph *gr1 = new TGraph (n, x, y);
+  TCanvas *c1 = new TCanvas("c1","Fit vs Real",200,10,800,600);
+  */
 
 }
 
