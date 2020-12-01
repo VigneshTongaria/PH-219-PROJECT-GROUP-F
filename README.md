@@ -14,4 +14,4 @@ GRAPHS TO PLOT
 3. Graph of <pT> vs multiplicity class.
 4. Graph of sqrt(delta pi delta pj)/<<pT>> vs multiplicity class.
 5. Graph of Standrad skewness vs multiplicity class.
-3. Graph of Intrinsic Skewness vs multiplicity class.
+6. Graph of Intrinsic Skewness vs multiplicity class.
