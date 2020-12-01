@@ -1,0 +1,119 @@
+\documentclass[letterpaper,aps,prc,superscriptaddress,nofootinbib,showpacs,floatfix]{revtex4-1}% PRC format\documentclass[12pt]
+%\usepackage[super]{cite}
+\usepackage{graphicx}
+\usepackage{comment}
+\usepackage{setspace}
+%\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage[textwidth=16cm,textheight=22cm]{geometry}
+\usepackage{color}
+\usepackage{indentfirst}
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{verbatim}
+\usepackage{epstopdf}
+
+%\usepackage{lineno}
+%\RequirePackage{lineno}
+%\setlength{\linenumbersep}{6pt}
+%\linenumber\cite{weib1,weib2} 
+\newcommand{\sqs}{\mbox{$\sqrt{s}$}\xspace}
+\newcommand{\ee}{\mbox{$e^{+} e^{-}$}\xspace}
+\newcommand{\pp}{\mbox{$pp\,(p\bar{p})$ }\xspace}
+
+
+
+\begin{document}
+
+%\titile{
+%in pp collisions at 13 TeV with Pythia 8}
+\title{ Measurement of higher moments of   $\cdots$}
+\author{XXX} 
+\email{XXX@iitb.ac.in}
+\affiliation{Indian Institute of Technology Bombay, Mumbai, India}
+\author{YYY}
+\affiliation{Indian Institute of Technology Bombay, Mumbai, India}
+\author{ZZZ}
+\affiliation{Indian Institute of Technology Bombay, Mumbai, India}
+
+%\email{ashutosh.kumar.pandey@cern.ch}
+%\email{sadhana@phy.iitb.ac.in}
+
+
+\date{\today}  
+
+
+
+\begin{abstract}
+
+Write a proper brief abstarct ...
+\end{abstract}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+The data provided is generated with Pythia 8  Monte Carlo event generator. \\
+Number of events :  2 million \\
+Collisions System :  p + p at centre of mass energy 13  TeV.\\
+
+
+Define  the variables, moments and the used formula \\
+
+
+
+
+\section{Experimental Observations }
+
+
+1.  Distribution  of  $p_{T}$ and $<p_{T}>$ for different multiplicity classes (0-20, 20-40 etc).  \\
+
+All the above plots should be in logarithmic scale. \\
+
+
+
+2. For $|\eta < 2.5|$ (you may opt not to use any cut but mention in the text),  do the following  \\
+
+
+a.  Plot $ \sqrt{ <\Delta p_{T1} \Delta p_{T2}>} / <p_{T}> $as a function of multiplicity class. \\
+
+b.  Plot standardized skewness and intensive skewness as a function of multiplicity.\\
+
+(Use the STAR definition. Please mention if you are using any other definition.)\\
+
+Do not bother about errors. If possible plot the statistical errors .\\
+
+
+\newpage
+\begin{figure*}
+\begin{center}
+\includegraphics[scale=0.8]{ppspectra.eps}
+\caption{(Color online) Put proper captions}
+\label{f1}
+\end{center}
+\end{figure*}
+
+
+
+\section{Summary}
+
+The study of  $\cdots$
+
+
+\begin{thebibliography}{50}
+\medskip
+
+
+%\bibitem{phenixwhite} K. ~Adcox 
+  %Nuclear Phys. A{\bf 757},184-283 (2005). 
+  
+\bibitem{alicenature} J. ~Adams {\it et al.}, (ALICE Collaboration), Nature Physics{\bf 13},535-539 (2017). 
+
+
+\end{thebibliography}
+
+\end{document}
+
