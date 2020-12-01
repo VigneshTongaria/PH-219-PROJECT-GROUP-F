@@ -1,4 +1,12 @@
 
+
+
+/*********************************************************************
+  ___________________________________________________________
+  | DEFINING THE FUNCTIONS FOR MEAN,VARIANCE AND SKEWNESS   |
+  |_________________________________________________________|
+
+*********************************************************************/
 Double_t mean(Double_t *x, Int_t n)
 {
     Double_t sum=0;
@@ -8,16 +16,6 @@ Double_t mean(Double_t *x, Int_t n)
 	}
     return sum*1.0/n;
 }
-
-
-  /*********************************************************************
-    ___________________________________________________________
-    |   DEFINING THE FUNCTIONS FOR VARIANCE AND SKEWNESS      |
-    |_________________________________________________________|
-
-  *********************************************************************/
-
-
 Double_t Q2(Double_t *x, Int_t n, Double_t mu)
 {
     return TMath::Power((TMath::Mean(x,x+n)-mu),2);
@@ -133,6 +131,8 @@ void readtree1()
       q3=q3*1.0/entries;
 
       cout<<"\n\n"<<A[I]<<"\n\n"<<endl;
+      cout<<"<pT>: "<<q1<<endl;
+      cout<<"Intensive Variance of <pT>: "<<TMath::Sqrt(q2)/q1<<endl;
       cout<<"Standardised Skewness of <pT>: "<<q3/TMath::Power(q2,1.5)<<endl;
       cout<<"Intensive Skewness of <pT>: "<<q3*q1/TMath::Power(q2,2)<<endl;
 
@@ -158,12 +158,30 @@ void readtree1()
   TGraph* gr1 = new TGraph(5,B,s1);
   TGraph* gr2 = new TGraph(5,B,s2);
   TGraph* gr3 = new TGraph(5,B,s3);
+  gr1->SetMarkerStyle(21);
+  gr1->SetMarkerColor(3);
+  gr1->SetMarkerSize(1);
+  gr1->SetTitle("Mean pT");
+  gr1->GetXaxis()->SetTitle("Multiplicity");
+  gr1->GetYaxis()->SetTitle("<pT> (GeV)");
+  gr2->SetMarkerStyle(18);
+  gr2->SetMarkerColor(5);
+  gr2->SetMarkerSize(1);
+  gr2->SetTitle("Variance of pT");
+  gr2->GetXaxis()->SetTitle("Multiplicity");
+  gr2->GetYaxis()->SetTitle("Var(pT)");
+  gr3->SetMarkerStyle(16);
+  gr3->SetMarkerColor(7);
+  gr3->SetMarkerSize(1);
+  gr3->SetTitle("Skewness of pT");
+  gr3->GetXaxis()->SetTitle("Multiplicity");
+  gr3->GetYaxis()->SetTitle("Skewness(pT)");
   c7->cd();
-  gr1->Draw();
+  gr1->Draw("APL");
   c8->cd();
-  gr2->Draw();
+  gr2->Draw("APL");
   c9->cd();
-  gr3->Draw();
+  gr3->Draw("APL");
 
   
 
