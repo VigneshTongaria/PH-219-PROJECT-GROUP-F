@@ -91,7 +91,6 @@ void readtree()
   TFile *f=new TFile("13TeV_CR0_RHoff.root");
   TTree *tree = (TTree*)f->Get(a);
   Int_t entries = tree->GetEntries();
-  //cout<<entries<<endl;
 
   const Int_t maxTrack=10000;
 
@@ -111,11 +110,7 @@ void readtree()
 
   *********************************************************************/
 
-  //TCanvas *c1=new TCanvas("c1","Multiplicity",200,10,800,600);
   TCanvas *c2=new TCanvas("c2","Transverse Momentum",200,10,800,600);
-  //TCanvas *c3=new TCanvas("c3","Phi",200,10,800,600);
-  //TCanvas *c4=new TCanvas("c4","Rapidity",200,10,800,600);
-  //TCanvas *c5=new TCanvas("c5","Rap",200,10,800,600);
   TCanvas *c6=new TCanvas("c6","Mean Transverse Momentum",200,10,800,600);
 
 
@@ -133,26 +128,17 @@ void readtree()
    
   Int_t ntrack = 0;
   Double_t pT[maxTrack];
-  Double_t eta[maxTrack];
-  Double_t rap[maxTrack];
-  Double_t phi[maxTrack];
   Double_t NT[entries];
 
 
   tree->SetBranchAddress("ntrack",&ntrack);
-  tree->SetBranchAddress("phi",&phi);
   tree->SetBranchAddress("pT",&pT);
-  tree->SetBranchAddress("eta",&eta);
-  tree->SetBranchAddress("rap",&rap);
  
 
 
   TH1D *hmult =  new TH1D("hmult","Multiplicity",100,0,100.0);
-  TH1D *hpT   =  new TH1D("hpT","Transverse Momentum", 100,0,2.0);
-  TH1D *hpTm   =  new TH1D("hpTm","Mean Transverse Momentum", 100,0,2.0);
-  TH1D *hphi  =  new TH1D("hphi","Phi",100,-5.0,5.0);
-  TH1D *heta  =  new TH1D("heta","Rapidity",100,-5.0,5.0);
-  TH1D *hrap  =  new TH1D("hrap","Rap",100,-5.0,5.0);
+  TH1D *hpT   =  new TH1D("hpT","Transverse Momentum", 100,0,3.0);
+  TH1D *hpTm   =  new TH1D("hpTm","Mean Transverse Momentum", 100,0,3.0);
 
 
 
@@ -222,12 +208,18 @@ void readtree()
 
   *********************************************************************/
 
-  hpT->SetTitle(a);
-  hpT->GetXaxis()->SetTitle("<pT> (GeV)");
+  hpT->SetTitle("Histogram for pT for pytree2040");
+  hpT->GetXaxis()->SetTitle("pT (GeV/c)");
   hpT->GetYaxis()->SetTitle("Count");
-  hpTm->SetTitle(a);
-  hpTm->GetXaxis()->SetTitle("<pT> (GeV)");
+  hpT->SetLineColor(kBlue);
+  hpT->SetFillColor(kCyan-10);
+  hpT->SetStats(0);
+  hpTm->SetTitle("Histogram for <pT> for pytree2040");
+  hpTm->GetXaxis()->SetTitle("<pT> (GeV/c)");
   hpTm->GetYaxis()->SetTitle("Count");
+  hpTm->SetLineColor(kBlue);
+  hpTm->SetFillColor(kCyan-10);
+  hpTm->SetStats(0);
 
 
 
@@ -242,12 +234,34 @@ void readtree()
 
    TF1 *gaus=new TF1("gaus","gaus",-0.5,0.5);
    gaus->SetParameters(hpTm->GetMaximum(), hpTm->GetMean(), hpTm->GetRMS()); 
+   gaus->SetLineColor(kRed);
    hpTm->Fit("gaus");
    TF1 *expo=new TF1("expo","expo",-0.5,0.5);
    expo->SetParameters(hpT->GetMean(), -hpT->GetMean()); 
+   expo->SetLineColor(kRed);
    hpT->Fit("expo");
 
 
+   /*********************************************************************
+    _____________________________________________
+    |   DEFINING THE LEGEND                     |
+    |___________________________________________|
+
+  *********************************************************************/
+
+
+
+   TLegend *legend1 = new TLegend(0.45,0.7,0.9,0.9);
+   legend1->SetHeader("Legend","C");
+   legend1->AddEntry(hpT,"Histogram for pT","f");
+   legend1->AddEntry(expo,"Exponential Fit","l");
+   legend1->SetFillColor(kYellow-10);
+   TLegend *legend2 = new TLegend(0.45,0.7,0.9,0.9);
+   legend2->SetHeader("Legend","C");
+   legend2->AddEntry(hpT,"Histogram for <pT>","f");
+   legend2->AddEntry(gaus,"Gaussian Fit","l");
+   legend2->SetFillColor(kYellow-10);
+   
 
 
   /*********************************************************************
@@ -257,39 +271,16 @@ void readtree()
 
   *********************************************************************/
 
-  //c1->cd();
-  //hmult->Draw();
   c2->cd();
+  c2->SetLogy();
   hpT->Draw();
+  legend1->Draw();
   c6->cd();
+  c6->SetLogy();
   hpTm->Draw();
-  //c3->cd();
-  //hphi->Draw();
-  //c4->cd();
-  //heta->Draw();
-  //c5->cd();
-  //hrap->Draw();
+  legend2->Draw();
 
 
-
-
-  /*********************************************************************
-    _____________________________________________
-    |       DRAWING THE GRAPHS                  |
-    |___________________________________________|
-
-  *********************************************************************/
-
-
-  TCanvas *c1 = new TCanvas("c1","A Simple Graph Example",200,10,500,300);
-   Double_t x[100], y[100];
-   Int_t n = 20;
-   for (Int_t i=0;i<n;i++) {
-     x[i] = i*0.1;
-     y[i] = 10*sin(x[i]+0.2);
-   }
-   TGraph* gr = new TGraph(n,x,y);
-   gr->Draw("AC*");
 
 
 
