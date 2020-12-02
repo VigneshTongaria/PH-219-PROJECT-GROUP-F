@@ -1,59 +1,3 @@
-
-/*Double_t mean(Double_t *x, Int_t n)
-{
-    Double_t sum=0;
-    for(int i=0;i<n;i++)
-    {
-        sum=sum+x[i];
-	}
-    return sum*1.0/n;
-}
-*/
-
-
-  /*********************************************************************
-    ___________________________________________________________
-    |   DEFINING THE FUNCTIONS FOR VARIANCE AND SKEWNESS      |
-    |_________________________________________________________|
-
-  *********************************************************************/
-
-
-Double_t Q2(Double_t *x, Int_t n, Double_t mu)
-{
-    Double_t sum=0;
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<n;j++)
-        {
-            if(i!=j)
-            {
-                sum+=(x[i]-mu)*(x[j]-mu);    
-			}
-	    }
-	}
-    return sum*1.0/(n*(n-1));
-}
-Double_t Q3(Double_t *x, Int_t n, Double_t mu)
-{
-    Double_t sum=0;
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<n;j++)
-        {
-            for(int k=0;k<n;k++)
-            {
-                if(i!=j&&j!=k&&k!=i)
-                {
-                    sum+=(x[i]-mu)*(x[j]-mu)*(x[k]-mu) ;   
-			    }
-            }
-	    }
-	}
-    return sum*1.0/(n*(n-1)*(n-2));
-}
-
-
 void readtree()
 {
   
@@ -88,6 +32,45 @@ void readtree()
   *********************************************************************/
 
   char a[]="pytree2040";
+  char a1[]="Histogram for pT for ";
+  char a2[]="Histogram for <pT> for ";
+  char b1[100];
+  char b2[100];
+  int k1=0;
+  int k2=0;
+  while (a1[k1] != '\0') 
+  { 
+        b1[k2] = a1[k1]; 
+        k1++; 
+        k2++; 
+  } 
+  k1 = 0; 
+  while (a[k1] != '\0') 
+  { 
+      b1[k2] = a[k1]; 
+      k1++; 
+      k2++; 
+  } 
+  b1[k2]='\0';
+
+  k1=0;
+  k2=0;
+  while (a2[k1] != '\0') 
+  { 
+        b2[k2] = a2[k1]; 
+        k1++; 
+        k2++; 
+  } 
+  k1 = 0; 
+  while (a[k1] != '\0') 
+  { 
+      b2[k2] = a[k1]; 
+      k1++; 
+      k2++; 
+  } 
+  b2[k2]='\0';
+
+
   TFile *f=new TFile("13TeV_CR0_RHoff.root");
   TTree *tree = (TTree*)f->Get(a);
   Int_t entries = tree->GetEntries();
@@ -101,11 +84,8 @@ void readtree()
   /*********************************************************************
     _____________________________________________
     |   DEFINING THE CANVASES                   |
-    |   CANVAS c1: MULTIPLICITY                 |
     |   CANVAS c2: TRANSVERSE MOMENTUM          |
-    |   CANVAS c3: PHI                          |
-    |   CANVAS c4: RAPIDITY                     |
-    |   CANVAS c5: RAP                          |
+    |   CANVAS c6: MEAN TRANSVERSE MOMENTUM     |
     |___________________________________________|
 
   *********************************************************************/
@@ -177,8 +157,6 @@ void readtree()
 
 
   Double_t M=hpTm->GetMean();
-  Double_t q2=0.0;
-  Double_t q3=0.0;
 
   for(Int_t ii=0; ii<entries; ii++)  
   {
@@ -186,15 +164,9 @@ void readtree()
         Int_t ntrks = ntrack;
         NT[ii]=ntrks;
         hmult->Fill(ntrks);
-        q2+=Q2(pT,ntrks,M);
-        q3+=Q3(pT,ntrks,M);
   }
-  q2=q2*1.0/entries;
-  q3=q3*1.0/entries;
 
   cout<<"\n\n"<<a<<"\n\n"<<endl;
-  cout<<"Standardised Skewness of <pT>: "<<q3/TMath::Power(q2,1.5)<<endl;
-  cout<<"Intensive Skewness of <pT>: "<<q3*M/TMath::Power(q2,2)<<endl;
 
   
   
@@ -208,13 +180,13 @@ void readtree()
 
   *********************************************************************/
 
-  hpT->SetTitle("Histogram for pT for pytree2040");
+  hpT->SetTitle(b1);
   hpT->GetXaxis()->SetTitle("pT (GeV/c)");
   hpT->GetYaxis()->SetTitle("Count");
   hpT->SetLineColor(kBlue);
   hpT->SetFillColor(kCyan-10);
   hpT->SetStats(0);
-  hpTm->SetTitle("Histogram for <pT> for pytree2040");
+  hpTm->SetTitle(b2);
   hpTm->GetXaxis()->SetTitle("<pT> (GeV/c)");
   hpTm->GetYaxis()->SetTitle("Count");
   hpTm->SetLineColor(kBlue);
