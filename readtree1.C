@@ -64,7 +64,10 @@ void readtree1()
   Double_t s1[]={0.0,0.0,0.0,0.0,0.0};
   Double_t s2[]={0.0,0.0,0.0,0.0,0.0};
   Double_t s3[]={0.0,0.0,0.0,0.0,0.0};
-  for(int I=0;I<5;I++)
+  Double_t s4[]={0.0,0.0,0.0,0.0,0.0};
+  int n=5;
+
+  for(int I=0;I<n;I++)
   {
       TFile *f=new TFile("13TeV_CR0_RHoff.root");
       TTree *tree = (TTree*)f->Get(A[I]);
@@ -139,7 +142,8 @@ void readtree1()
 
       s1[I]=q1;
       s2[I]=TMath::Sqrt(q2)/q1;
-      s3[I]=q3*q1/TMath::Power(q2,2);
+      s3[I]=q3/TMath::Power(q2,1.5);
+      s4[I]=q3*q1/TMath::Power(q2,2);
 
   }
 
@@ -152,36 +156,75 @@ void readtree1()
   *********************************************************************/
 
 
-  TCanvas *c7 = new TCanvas("c7","Mean",200,10,500,300);
-  TCanvas *c8 = new TCanvas("c8","Variance",200,10,500,300);
-  TCanvas *c9 = new TCanvas("c9","Skewness",200,10,500,300);
+  TCanvas *c1 = new TCanvas("c1","Mean",200,10,500,300);
+  TCanvas *c2 = new TCanvas("c2","Intensive Variance",200,10,500,300);
+  TCanvas *c3 = new TCanvas("c3","Standardized Skewness",200,10,500,300);
+  TCanvas *c4 = new TCanvas("c4","Intensive Skewness",200,10,500,300);
   TGraph* gr1 = new TGraph(5,B,s1);
   TGraph* gr2 = new TGraph(5,B,s2);
   TGraph* gr3 = new TGraph(5,B,s3);
-  gr1->SetMarkerStyle(21);
-  gr1->SetMarkerColor(3);
-  gr1->SetMarkerSize(1);
+  TGraph* gr4 = new TGraph(5,B,s4);
+
+
+  gr1->SetMarkerStyle(20);
+  gr1->SetMarkerColor(2);
+  gr1->SetMarkerSize(2);
+  gr1->SetLineWidth(3);
+  gr1->SetLineStyle(1);
+  gr1->SetMinimum(0);
+  gr1->SetMaximum(TMath::MaxElement(n,gr1->GetY())*1.5);
   gr1->SetTitle("Mean pT");
   gr1->GetXaxis()->SetTitle("Multiplicity");
-  gr1->GetYaxis()->SetTitle("<pT> (GeV)");
-  gr2->SetMarkerStyle(18);
-  gr2->SetMarkerColor(5);
-  gr2->SetMarkerSize(1);
-  gr2->SetTitle("Variance of pT");
+  gr1->GetYaxis()->SetTitle("<pT> (GeV/c)");
+
+
+  gr2->SetMarkerStyle(21);
+  gr2->SetMarkerColor(3);
+  gr2->SetMarkerSize(2);
+  gr2->SetLineWidth(3);
+  gr2->SetLineStyle(7);
+  gr2->SetLineColor(16);
+  gr2->SetMinimum(0);
+  gr2->SetMaximum(TMath::MaxElement(n,gr2->GetY())*1.5);
+  gr2->SetTitle("Intensive Variance of pT");
   gr2->GetXaxis()->SetTitle("Multiplicity");
   gr2->GetYaxis()->SetTitle("Var(pT)");
-  gr3->SetMarkerStyle(16);
-  gr3->SetMarkerColor(7);
-  gr3->SetMarkerSize(1);
-  gr3->SetTitle("Skewness of pT");
+
+
+  gr3->SetMarkerStyle(22);
+  gr3->SetMarkerColor(4);
+  gr3->SetMarkerSize(2);
+  gr3->SetLineWidth(3);
+  gr3->SetLineStyle(7);
+  gr3->SetLineColor(16);
+  gr3->SetMinimum(0);
+  gr3->SetMaximum(TMath::MaxElement(n,gr3->GetY())*1.5);
+  gr3->SetTitle("Standardized Skewness of pT");
   gr3->GetXaxis()->SetTitle("Multiplicity");
-  gr3->GetYaxis()->SetTitle("Skewness(pT)");
-  c7->cd();
+  gr3->GetYaxis()->SetTitle("Skewness(pT) (GeV/c)");
+  
+
+  gr4->SetMarkerStyle(29);
+  gr4->SetMarkerColor(9);
+  gr4->SetMarkerSize(2);
+  gr4->SetLineWidth(3);
+  gr4->SetLineStyle(7);
+  gr4->SetLineColor(16);
+  gr4->SetMinimum(0);
+  gr4->SetMaximum(TMath::MaxElement(n,gr4->GetY())*1.5);
+  gr4->SetTitle("Intensive Skewness of pT");
+  gr4->GetXaxis()->SetTitle("Multiplicity");
+  gr4->GetYaxis()->SetTitle("Skewness(pT)");
+
+
+  c1->cd();
   gr1->Draw("APL");
-  c8->cd();
+  c2->cd();
   gr2->Draw("APL");
-  c9->cd();
+  c3->cd();
   gr3->Draw("APL");
+  c4->cd();
+  gr4->Draw("APL");
 
   
 
