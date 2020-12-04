@@ -1,4 +1,4 @@
-\documentclass[letterpaper,aps,prc,superscriptaddress,nofootinbib,showpacs,floatfix]{revtex4-2}% PRC format\documentclass[12pt]
+\documentclass[letterpaper,aps,prc,superscriptaddress,nofootinbib,10pt,showpacs,floatfix]{revtex4-2}% PRC format\documentclass[12pt]
 %\usepackage[super]{cite}
 \usepackage{graphicx}
 \usepackage{comment}
@@ -13,7 +13,16 @@
 \usepackage{verbatim}
 \usepackage{epstopdf}
 \usepackage{hyperref}
+\usepackage{placeins}
+\usepackage{xfrac}
+\usepackage[table]{xcolor}
+\usepackage{array}
 
+
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcommand{\addmathvspace}{\vrule width 0pt height 4ex depth 2.5ex}
 %\usepackage{lineno}
 %\RequirePackage{lineno}
 %\setlength{\linenumbersep}{6pt}
@@ -21,6 +30,9 @@
 \newcommand{\sqs}{\mbox{$\sqrt{s}$}\xspace}
 \newcommand{\ee}{\mbox{$e^{+} e^{-}$}\xspace}
 \newcommand{\pp}{\mbox{$pp\,(p\bar{p})$ }\xspace}
+\newcommand{\bfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+
+\setlength{\arrayrulewidth}{0.8mm}
 \graphicspath{ {./images/} }
 
 
@@ -69,6 +81,20 @@ Write a proper brief abstarct ...
 
 We shall be using the STAR definition. 
 
+\begin{equation}
+\label{eq:1}
+\mathrm{Mean\ Transverse\ Momentum}=\left<\left<p_T\right>\right>=\left<\bfrac{\Sigma_{i=1}^{N_{ch}} p_i}{N_{ch}}\right>
+\end{equation}
+\vspace{-5mm}
+\begin{equation}
+\label{eq:2}
+\left<\Delta p_i \Delta p_j\right>=\left<\left(\left<p_t\right>-\left<\left<p_t\right>\right>\right)^2\right>
+\end{equation}
+\vspace{-5mm}
+\begin{equation}
+\label{eq:3}
+\mathrm{Intensive\ Variance\ Of\ Transverse\ Momentum}=\sigma_{p_T}=\bfrac{\left<\Delta p_i \Delta p_j\right>^{\sfrac{1}{2}}}{\left<\left<p_T\right>\right>}
+\end{equation}
 
 
 
@@ -92,38 +118,195 @@ We shall be using the STAR definition.
 
 %Do not bother about errors. If possible plot the statistical errors .\\
 
-In this section, we have plotted the histograms for the Transverse Momentum $\mathbf{pT}$ and the Mean Transverse Momentum $\mathbf{\left<pT\right>}$ of proton-proton collisions corresponding to each multiplicity class. The histogram for $\mathbf{pT}$ is then approximated using an \textbf{Exponential} fit, while that of $\mathbf{\left<pT\right>}$ has been approximated using a \textbf{Gaussian} fit. Both the quantities $\mathbf{pT}$ and $\mathbf{\left<pT\right>}$ have statistical fluctuations arising from the finite number of particles in each event. In each of the subsequent subsections corresponding to each of the 5 multiplicity classes, namely \hyperref[subsec:2040]{\textbf{pytree2040}}, \hyperref[subsec:4060]{\textbf{pytree4060}}, \hyperref[subsec:6080]{\textbf{pytree6080}}, \textbf{pytree80100} and \textbf{pytree100}, the histograms and the corresponding fits have been plotted. A logarithmic scale has been used on the \emph{y-axis} in order to emphasize the skewness of the data.
 
-\subsection{Multiplicity Class "pytree2040"}
-\label{subsec:2040}
 
+\subsection{Transverse Momentum and Mean Transverse Momentum for Each Multiplicity Class}
+In this section, we have plotted the histograms for the Transverse Momentum $\mathbf{pT}$ and the Mean Transverse Momentum $\mathbf{\left<pT\right>}$ of proton-proton collisions corresponding to each multiplicity class. The histogram for $\mathbf{pT}$ is then approximated using an \textbf{Exponential} fit, while that of $\mathbf{\left<pT\right>}$ has been approximated using a \textbf{Gaussian} fit. Both the quantities $\mathbf{pT}$ and $\mathbf{\left<pT\right>}$ have statistical fluctuations arising from the finite number of particles in each event. In each of the subsequent subsections corresponding to each of the 5 multiplicity classes, namely \hyperref[subsubsec:2040]{\textbf{pytree2040}}, \hyperref[subsubsec:4060]{\textbf{pytree4060}}, \hyperref[subsubsec:6080]{\textbf{pytree6080}}, \hyperref[subsubsec:80100]{\textbf{pytree80100}} and \hyperref[subsubsec:100]{\textbf{pytree100}}, the histograms and the corresponding fits have been plotted. A logarithmic scale has been used on the \emph{y-axis} in order to emphasize the skewness of the data. 
+
+
+
+\subsubsection{Multiplicity Class "pytree2040"}
+\label{subsubsec:2040}
+\vspace{-5mm}
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
+   \label{Fig:1a}
+   \label{Fig:1b}
      \centering
      \renewcommand{\thefigure}{1a}
      \includegraphics[width=1.1\linewidth]{pt_2040}
-     \caption{Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree2040}. The solid line is an Exponential fit to the data.}\label{Fig:1a}
+     \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree2040}. The solid line is an Exponential fit to the data.}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
      \renewcommand{\thefigure}{1b}
      \includegraphics[width=1.1\linewidth]{/mpt_2040}
-     \caption{Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree2040}. The solid line is a Gaussian fit to the data.}\label{Fig:1b}
+     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree2040}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
 \end{figure}
 
+\FloatBarrier
+\vspace{-3mm}
+%\pagebreak
 
-\subsection{Multiplicity Class "pytree4060"}
-\label{subsec:4060}
+\subsubsection{Multiplicity Class "pytree4060"}
+\label{subsubsec:4060}
+\vspace{-5mm}
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+   \label{Fig:2a}
+   \label{Fig:2b}
+     \centering
+     \renewcommand{\thefigure}{2a}
+     \includegraphics[width=1.1\linewidth]{pt_4060}
+     \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree4060}. The solid line is an Exponential fit to the data.}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \renewcommand{\thefigure}{2b}
+     \includegraphics[width=1.1\linewidth]{/mpt_4060}
+     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree4060}. The solid line is a Gaussian fit to the data.}
+   \end{minipage}
+\end{figure}
 
-\subsection{Multiplicity Class "pytree6080"}
-\label{subsec:6080}
+\FloatBarrier
+\vspace{-3mm}
 
-\subsection{Multiplicity Class "pytree80100"}
-\label{subsec:80100}
+\subsubsection{Multiplicity Class "pytree6080"}
+\label{subsubsec:6080}
+\vspace{-5mm}
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+   \label{Fig:3a}
+   \label{Fig:3b}
+     \centering
+     \renewcommand{\thefigure}{3a}
+     \includegraphics[width=1.1\linewidth]{pt_6080}
+     \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree6080}. The solid line is an Exponential fit to the data.}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \renewcommand{\thefigure}{3b}
+     \includegraphics[width=1.1\linewidth]{/mpt_6080}
+     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree6080}. The solid line is a Gaussian fit to the data.}
+   \end{minipage}
+\end{figure}
 
-\subsection{Multiplicity Class "pytree100"}
-\label{subsec:100}
+\FloatBarrier
+\vspace{-3mm}
+
+\subsubsection{Multiplicity Class "pytree80100"}
+\label{subsubsec:80100}
+\vspace{-5mm}
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+   \label{Fig:4a}
+   \label{Fig:4b}
+     \centering
+     \renewcommand{\thefigure}{4a}
+     \includegraphics[width=1.1\linewidth]{pt_80100}
+     \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree80100}. The solid line is an Exponential fit to the data.}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \renewcommand{\thefigure}{4b}
+     \includegraphics[width=1.1\linewidth]{/mpt_80100}
+     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree80100}. The solid line is a Gaussian fit to the data.}
+   \end{minipage}
+\end{figure}
+
+\FloatBarrier
+\vspace{-3mm}
+
+\subsubsection{Multiplicity Class "pytree100"}
+\label{subsubsec:100}
+\vspace{-5mm}
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+   \label{Fig:5a}
+   \label{Fig:5b}
+     \centering
+     \renewcommand{\thefigure}{5a}
+     \includegraphics[width=1.1\linewidth]{pt_100}
+     \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree100}. The solid line is an Exponential fit to the data.}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \renewcommand{\thefigure}{5b}
+     \includegraphics[width=1.1\linewidth]{/mpt_100}
+     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree100}. The solid line is a Gaussian fit to the data.}
+   \end{minipage}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Analysis of Mean, Variance and Skewness Versus Multiplicity Class}
+From the graphs in \hyperref[Fig:1a]{FIG. 1a.}, \hyperref[Fig:2a]{FIG. 2a.}, \hyperref[Fig:3a]{FIG. 3a.}, \hyperref[Fig:4a]{FIG. 4a.} and \hyperref[Fig:5a]{FIG. 5a.}, it is clear that the Transverse Momenta of the particles produced in a proton-proton collision follows approximately an \textbf{exponential distribution}. Graphs in \hyperref[Fig:1b]{FIG. 1b.}, \hyperref[Fig:2b]{FIG. 2b.}, \hyperref[Fig:3b]{FIG. 3b.}, \hyperref[Fig:4b]{FIG. 4b.} and \hyperref[Fig:5b]{FIG. 5b.} reveal that there is some \textbf{positive skew} in the distribution of the Mean Transverse Momentum.
+\\
+In this section, we shall analyse the moments of the distribution of Transverse Momentum. We shall calculate the Mean, Variance and Skewness of the Transverse Momenta for each multiplicity class and study its relation with the multiplicity class. For each of the multiplicity classes, the Mean Transverse Momentum, the Intensive Variance of the Transverse Momentum, the Standardized Skewness of the Transverse Momentum and the Intensive Skewness of the Transverse Momentum, calculated using formulae \ref{eq:1}, \ref{eq:3} respectively have been summarised in the \hyperref[subsubsec:summary]{table} below.
+
+%\pagebreak
+\newpage
+
+\subsubsection{Summary of Data}
+\label{subsubsec:summary}
+\vspace{-5mm}
+The table below summarizes the data.
+\begin{table}[!htb]
+\centering
+	\begin{tabular}{|M{5cm}|M{2cm}|M{2cm}|M{2cm}|M{2cm}|M{2cm}|}
+		\hline
+		\multicolumn{6}{|c|}{\addmathvspace\textbf{SUMMARY OF DATA}}\\
+		\hline
+		\addmathvspace\textbf{Multiplicity Class} & 
+		$\mathbf{Events}$ & 
+		\begin{tabular}{c}
+			$\large\mathbf{\left<p_T\right>}$\\[2pt]
+			\textbf{(GeV/c)}
+		\end{tabular} &
+		$\large\mathbf{\sigma_{p_T}}$ & 
+		\begin{tabular}{c}
+			$\large\mathbf{\gamma_{p_T}}$\\[2pt]
+			\textbf{(GeV/c)}
+		\end{tabular} &		 
+		$\large\mathbf{\Gamma_{p_T}}$\\[10pt]
+		\hline
+		\textit{pytree2040}&\addmathvspace873322&0.869307&0.174974&1.77742&10.1582\\[5pt]
+		\hline
+		\textit{pytree4060}&\addmathvspace445805&0.940521&0.144591&1.80884&12.51\\[5pt]
+		\hline
+		\textit{pytree6080}&\addmathvspace207990&0.99074&0.130471&3.11451&23.8714\\[5pt]
+		\hline
+		\textit{pytree80100}&\addmathvspace71263&1.03006&0.122603&1.64507&13.4178\\[5pt]
+		\hline
+		\textit{pytree100}&\addmathvspace20981&1.07257&0.132207&4.11805&31.1485\\[5pt]
+		\hline		
+	\end{tabular}
+	\caption{Table Summarizing the Data of Transverse Momenta}
+\end{table}
+
+\FloatBarrier
+\vspace{-3mm}
+
+
+\subsubsection{Mean Transverse Momentum versus Multiplicity Class}
+\label{subsubsec:mean}
+\vspace{-5mm}
+\begin{figure}[!htb]
+   \label{Fig:6}
+     \centering
+     \renewcommand{\thefigure}{6}
+     \includegraphics[width=0.8\linewidth]{mean}
+     \caption{(Color Online) A plot of mean transverse momenta versus multiplicity class.}
+\end{figure}
+
+
+
+
+
+
+
+
 
 
 \newpage
@@ -134,6 +317,12 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
 \label{f1}
 \end{center}
 \end{figure*}
+
+
+
+
+
+
 
 
 

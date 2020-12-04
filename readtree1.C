@@ -69,9 +69,13 @@ Double_t Q3(Double_t *x, Int_t n, Double_t mu)
     ╟──────────┼────────────────┼──────────┼───────────────────────────────────────────────────────────────────────╢
     ║    q3    │    Double_t    │    -     │           Stores <del pi del pj del pk> = <(<pT>-<<pT>>)^3>           ║
     ╟──────────┼────────────────┼──────────┼───────────────────────────────────────────────────────────────────────╢
+    ║   elem   │    Double_t    │    -     │     Stores the total number of elements in the multiplicity class     ║
+    ╟──────────┼────────────────┼──────────┼───────────────────────────────────────────────────────────────────────╢
     ║  ntrks   │     Int_t      │    -     │            Temporarily stores ntrack for the current event            ║
     ╟──────────┼────────────────┼──────────┼───────────────────────────────────────────────────────────────────────╢
-    ║    ii    │      int       │    -     │                         Loop index for events                         ║
+    ║    ii    │     Int_t      │    -     │                         Loop index for events                         ║
+    ╟──────────┼────────────────┼──────────┼───────────────────────────────────────────────────────────────────────╢
+    ║    jj    │     Int_t      │    -     │                  Loop index for ntrack in each event                  ║
     ╟──────────┼────────────────┼──────────┼───────────────────────────────────────────────────────────────────────╢
     ║    c1    │                │          │         Canvas for Graph of Mean of pT vs Multiplicity Class          ║
     ╟──────────┤                │          ├───────────────────────────────────────────────────────────────────────╢
@@ -189,15 +193,20 @@ void readtree1()
       Double_t q1=0.0;
       Double_t q2=0.0;
       Double_t q3=0.0;
+      Double_t elem=0.0;
 
       for(Int_t ii=0; ii<entries; ii++)  
       {
             tree->GetEntry(ii);
             Int_t ntrks = ntrack;
             NT[ii]=ntrks;
-            q1+=TMath::Mean(pT,pT+ntrks);
+            for(Int_t jj=0;jj<ntrks;jj++)
+            {
+                q1+=pT[jj];
+			}
+            elem+=ntrks;
       }
-      q1=q1*1.0/entries;
+      q1=q1*1.0/elem;
       for(Int_t ii=0; ii<entries; ii++)  
       {
             tree->GetEntry(ii);
@@ -210,10 +219,11 @@ void readtree1()
       q3=q3*1.0/entries;
 
       cout<<"\n\n"<<A[I]<<"\n\n"<<endl;
+      cout<<"Number of Events: "<<entries<<endl;
       cout<<"<pT>: "<<q1<<endl;
-      cout<<"Intensive Variance of <pT>: "<<TMath::Sqrt(q2)/q1<<endl;
-      cout<<"Standardised Skewness of <pT>: "<<q3/TMath::Power(q2,1.5)<<endl;
-      cout<<"Intensive Skewness of <pT>: "<<q3*q1/TMath::Power(q2,2)<<endl;
+      cout<<"Intensive Variance of pT: "<<TMath::Sqrt(q2)/q1<<endl;
+      cout<<"Standardised Skewness of pT: "<<q3/TMath::Power(q2,1.5)<<endl;
+      cout<<"Intensive Skewness of pT: "<<q3*q1/TMath::Power(q2,2)<<endl;
 
 
       s1[I]=q1;

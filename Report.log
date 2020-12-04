@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.7)  2 DEC 2020 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.7)  4 DEC 2020 23:00
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -76,10 +76,6 @@ Class revtex4-2 Info: RevTeX society APS selected on input line 40.
 )
 Class revtex4-2 Info: Selecting journal prc on input line 7660.
 Class revtex4-2 Info: APS journal PRC selected on input line 7661.
-
-
-Class revtex4-2 Warning: No type size specified, using default 10.
-
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/revtex\a
 ps10pt4-2.rtx"
@@ -414,54 +410,143 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 ))
-Class revtex4-2 Info: Unrecognized LaTeX tabular. Please update this document c
-lass! (Proceeding with fingers crossed.) on input line 28.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 28.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 28.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 28.
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/placeins
+\placeins.sty"
+Package: placeins 2005/04/18  v 2.2
+)
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packag
+es/xfrac\xfrac.sty"
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3kernel
+\expl3.sty"
+Package: expl3 2020-04-06 L3 programming layer (loader) 
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3backen
 d\l3backend-pdfmode.def"
 File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count271
 \l__pdf_internal_box=\box62
-) (Report.aux)
+))
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packag
+es/l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2020-03-06 LaTeX2e option processing using LaTeX3 keys
+)
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\tex
+tcomp.sty"
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packag
+es/xparse\xparse.sty"
+Package: xparse 2020-03-06 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count272
+\g__xparse_grabber_int=\count273
+\l__xparse_m_args_int=\count274
+\l__xparse_v_nesting_int=\count275
+)
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/l3packag
+es/xtemplate\xtemplate.sty"
+Package: xtemplate 2020-03-06 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen149
+\l__xtemplate_tmp_int=\count276
+\l__xtemplate_tmp_muskip=\muskip18
+\l__xtemplate_tmp_skip=\skip56
+)
+Package: xfrac 2020-03-06 L3 Experimental split-level fractions
+\l__xfrac_slash_box=\box63
+\l__xfrac_tmp_box=\box64
+\l__xfrac_denominator_bot_sep_dim=\dimen150
+\l__xfrac_numerator_bot_sep_dim=\dimen151
+\l__xfrac_numerator_top_sep_dim=\dimen152
+\l__xfrac_slash_left_sep_dim=\dimen153
+\l__xfrac_slash_right_sep_dim=\dimen154
+\l__xfrac_slash_left_muskip=\muskip19
+\l__xfrac_slash_right_muskip=\muskip20
+
+Package xtemplate Info: Declaring object type 'xfrac' taking 3 argument(s) on
+(xtemplate)             line 80.
+
+)
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\x
+color.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics
+-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/colortbl
+\colortbl.sty"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+
+("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\ar
+ray.sty"
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen155
+\ar@mcellbox=\box65
+\extrarowheight=\dimen156
+\NC@list=\toks25
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box66
+)
+\everycr=\toks26
+\minrowclearance=\skip59
+)
+LaTeX Info: Redefining \color on input line 709.
+\rownum=\count277
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+Class revtex4-2 Info: colortbl package is loaded. (Proceeding with fingers cros
+sed.) on input line 40.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 40.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 40.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 40.
+ (Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/m
 kii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count272
-\scratchdimen=\dimen149
-\scratchbox=\box63
-\nofMPsegments=\count273
-\nofMParguments=\count274
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count275
-\MPscratchDim=\dimen150
-\MPnumerator=\count276
-\makeMPintoPDFobject=\count277
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count278
+\scratchdimen=\dimen157
+\scratchbox=\box67
+\nofMPsegments=\count279
+\nofMParguments=\count280
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count281
+\MPscratchDim=\dimen158
+\MPnumerator=\count282
+\makeMPintoPDFobject=\count283
+\everyMPtoPDFconversion=\toks28
 )
-\AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring OFF on input line 28.
+\AtBeginShipoutBox=\box68
+Package hyperref Info: Link coloring OFF on input line 40.
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref
 \nameref.sty"
@@ -475,26 +560,26 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count278
+\c@section@level=\count284
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
  (Report.out) (Report.out)
 \@outlinefile=\write5
 \openout5 = `Report.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 28.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 40.
 \openout3 = `ReportNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
 
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts
 \umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
 
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts
@@ -503,88 +588,203 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 56.
+(hyperref)                removing `math shift' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 56.
+(hyperref)                removing `\<def>-command' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\next@' on input line 56.
+(hyperref)                removing `\next@' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 56.
+(hyperref)                removing `\<let>-command' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\next@' on input line 56.
+(hyperref)                removing `\next@' on input line 68.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 56.
+(hyperref)                removing `math shift' on input line 68.
 
-<./images/pt_2040.jpg, id=55, 1282.7925pt x 634.37pt>
+<./images/pt_2040.jpg, id=73, 1282.7925pt x 634.37pt>
 File: ./images/pt_2040.jpg Graphic file (type jpg)
 <use ./images/pt_2040.jpg>
-Package pdftex.def Info: ./images/pt_2040.jpg  used on input line 104.
+Package pdftex.def Info: ./images/pt_2040.jpg  used on input line 137.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 104--105
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 137--138
  [][] 
  []
 
-<./images//mpt_2040.jpg, id=56, 1282.7925pt x 634.37pt>
+<./images//mpt_2040.jpg, id=74, 1282.7925pt x 634.37pt>
 File: ./images//mpt_2040.jpg Graphic file (type jpg)
 <use ./images//mpt_2040.jpg>
-Package pdftex.def Info: ./images//mpt_2040.jpg  used on input line 110.
+Package pdftex.def Info: ./images//mpt_2040.jpg  used on input line 143.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 110--111
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 143--144
  [][] 
  []
 
-[1{C:/Users/Ankan Mukherjee/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} 
-<./images/pt_2040.jpg> <./images//mpt_2040.jpg>] [2]
+[1{C:/Users/Ankan Mukherjee/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<./images/pt_4060.jpg, id=103, 1282.7925pt x 634.37pt>
+File: ./images/pt_4060.jpg Graphic file (type jpg)
+<use ./images/pt_4060.jpg>
+Package pdftex.def Info: ./images/pt_4060.jpg  used on input line 161.
+(pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
+
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 161--162
+ [][] 
+ []
+
+<./images//mpt_4060.jpg, id=104, 1282.7925pt x 634.37pt>
+File: ./images//mpt_4060.jpg Graphic file (type jpg)
+<use ./images//mpt_4060.jpg>
+Package pdftex.def Info: ./images//mpt_4060.jpg  used on input line 167.
+(pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
+
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 167--168
+ [][] 
+ []
+
+<./images/pt_6080.jpg, id=105, 1282.7925pt x 634.37pt>
+File: ./images/pt_6080.jpg Graphic file (type jpg)
+<use ./images/pt_6080.jpg>
+Package pdftex.def Info: ./images/pt_6080.jpg  used on input line 184.
+(pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
+
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 184--185
+ [][] 
+ []
+
+<./images//mpt_6080.jpg, id=106, 1282.7925pt x 634.37pt>
+File: ./images//mpt_6080.jpg Graphic file (type jpg)
+<use ./images//mpt_6080.jpg>
+Package pdftex.def Info: ./images//mpt_6080.jpg  used on input line 190.
+(pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
+
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 190--191
+ [][] 
+ []
+
+<./images/pt_80100.jpg, id=107, 1282.7925pt x 634.37pt>
+File: ./images/pt_80100.jpg Graphic file (type jpg)
+<use ./images/pt_80100.jpg>
+Package pdftex.def Info: ./images/pt_80100.jpg  used on input line 207.
+(pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
+
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 207--208
+ [][] 
+ []
+
+<./images//mpt_80100.jpg, id=108, 1282.7925pt x 634.37pt>
+File: ./images//mpt_80100.jpg Graphic file (type jpg)
+<use ./images//mpt_80100.jpg>
+Package pdftex.def Info: ./images//mpt_80100.jpg  used on input line 213.
+(pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
+
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 213--214
+ [][] 
+ []
+
+[2 <./images/pt_2040.jpg> <./images//mpt_2040.jpg> <./images/pt_4060.jpg> <./im
+ages//mpt_4060.jpg> <./images/pt_6080.jpg> <./images//mpt_6080.jpg>]
+<./images/pt_100.jpg, id=120, 1282.7925pt x 634.37pt>
+File: ./images/pt_100.jpg Graphic file (type jpg)
+<use ./images/pt_100.jpg>
+Package pdftex.def Info: ./images/pt_100.jpg  used on input line 230.
+(pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
+
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 230--231
+ [][] 
+ []
+
+<./images//mpt_100.jpg, id=121, 1282.7925pt x 634.37pt>
+File: ./images//mpt_100.jpg Graphic file (type jpg)
+<use ./images//mpt_100.jpg>
+Package pdftex.def Info: ./images//mpt_100.jpg  used on input line 236.
+(pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
+
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 236--237
+ [][] 
+ []
+
+[3 <./images/pt_80100.jpg> <./images//mpt_80100.jpg> <./images/pt_100.jpg> <./i
+mages//mpt_100.jpg>]
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 264.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 267.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 269.
+
+
+LaTeX Font Warning: Command \large invalid in math mode on input line 272.
+
+<./images/mean.jpg, id=143, 1282.7925pt x 634.37pt>
+File: ./images/mean.jpg Graphic file (type jpg)
+<use ./images/mean.jpg>
+Package pdftex.def Info: ./images/mean.jpg  used on input line 299.
+(pdftex.def)             Requested size: 408.00156pt x 201.76353pt.
+[4 <./images/mean.jpg>]
 No file Report.bbl.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
  (Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 06DE1CC970F06FD85D394D0A4C648379;764.
+(rerunfilecheck)             Checksum: BF66398082821A2D9EF35D8BB8F90BA3;1164.
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 3.25pt have occured.
+
  ) 
 Here is how much of TeX's memory you used:
- 8453 strings out of 480930
- 126547 string characters out of 2895070
- 399231 words of memory out of 3000000
- 24139 multiletter control sequences out of 15000+200000
- 542772 words of font info for 64 fonts, out of 3000000 for 9000
+ 9895 strings out of 480930
+ 158749 string characters out of 2895070
+ 448043 words of memory out of 3000000
+ 25521 multiletter control sequences out of 15000+200000
+ 546642 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,8n,31p,1031b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,20n,70p,1094b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ankan Mukherjee/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Users
 /Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr10.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Ankan Mukherje
-e/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
-/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr9.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ankan Mukherjee/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Ankan 
-Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-7.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy9.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Ankan Mukherjee/Ap
-pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report.pdf (3 pages, 238063 bytes).
+cm/cmbx7.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ankan Mukhe
+rjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmmi5.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Ankan Mukherjee/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/A
+nkan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr5.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Ankan Mukherjee/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
+ers/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr9.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ankan Mukherjee/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Ankan Muk
+herjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy9.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Ankan Mukherjee/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
+Output written on Report.pdf (5 pages, 628701 bytes).
 PDF statistics:
- 141 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
