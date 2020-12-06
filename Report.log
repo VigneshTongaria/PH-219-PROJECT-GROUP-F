@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.7)  4 DEC 2020 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.7)  5 DEC 2020 22:19
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -510,7 +510,14 @@ sed.) on input line 40.
 Class revtex4-2 Info: cite was not loaded (OK!) on input line 40.
 Class revtex4-2 Info: mcite was not loaded (OK!) on input line 40.
 Class revtex4-2 Info: multicol was not loaded (OK!) on input line 40.
- (Report.aux)
+ (Report.aux
+
+LaTeX Warning: Label `subsubsec:intvar' multiply defined.
+
+
+LaTeX Warning: Label `subsubsec:intvar' multiply defined.
+
+)
 \openout1 = `Report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -610,7 +617,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 68.
 
-<./images/pt_2040.jpg, id=73, 1282.7925pt x 634.37pt>
+<./images/pt_2040.jpg, id=85, 1282.7925pt x 634.37pt>
 File: ./images/pt_2040.jpg Graphic file (type jpg)
 <use ./images/pt_2040.jpg>
 Package pdftex.def Info: ./images/pt_2040.jpg  used on input line 137.
@@ -620,7 +627,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 137--138
  [][] 
  []
 
-<./images//mpt_2040.jpg, id=74, 1282.7925pt x 634.37pt>
+<./images//mpt_2040.jpg, id=86, 1282.7925pt x 634.37pt>
 File: ./images//mpt_2040.jpg Graphic file (type jpg)
 <use ./images//mpt_2040.jpg>
 Package pdftex.def Info: ./images//mpt_2040.jpg  used on input line 143.
@@ -631,7 +638,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 143--144
  []
 
 [1{C:/Users/Ankan Mukherjee/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<./images/pt_4060.jpg, id=103, 1282.7925pt x 634.37pt>
+<./images/pt_4060.jpg, id=115, 1282.7925pt x 634.37pt>
 File: ./images/pt_4060.jpg Graphic file (type jpg)
 <use ./images/pt_4060.jpg>
 Package pdftex.def Info: ./images/pt_4060.jpg  used on input line 161.
@@ -641,7 +648,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 161--162
  [][] 
  []
 
-<./images//mpt_4060.jpg, id=104, 1282.7925pt x 634.37pt>
+<./images//mpt_4060.jpg, id=116, 1282.7925pt x 634.37pt>
 File: ./images//mpt_4060.jpg Graphic file (type jpg)
 <use ./images//mpt_4060.jpg>
 Package pdftex.def Info: ./images//mpt_4060.jpg  used on input line 167.
@@ -651,7 +658,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
-<./images/pt_6080.jpg, id=105, 1282.7925pt x 634.37pt>
+<./images/pt_6080.jpg, id=117, 1282.7925pt x 634.37pt>
 File: ./images/pt_6080.jpg Graphic file (type jpg)
 <use ./images/pt_6080.jpg>
 Package pdftex.def Info: ./images/pt_6080.jpg  used on input line 184.
@@ -661,7 +668,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 184--185
  [][] 
  []
 
-<./images//mpt_6080.jpg, id=106, 1282.7925pt x 634.37pt>
+<./images//mpt_6080.jpg, id=118, 1282.7925pt x 634.37pt>
 File: ./images//mpt_6080.jpg Graphic file (type jpg)
 <use ./images//mpt_6080.jpg>
 Package pdftex.def Info: ./images//mpt_6080.jpg  used on input line 190.
@@ -671,7 +678,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 190--191
  [][] 
  []
 
-<./images/pt_80100.jpg, id=107, 1282.7925pt x 634.37pt>
+<./images/pt_80100.jpg, id=119, 1282.7925pt x 634.37pt>
 File: ./images/pt_80100.jpg Graphic file (type jpg)
 <use ./images/pt_80100.jpg>
 Package pdftex.def Info: ./images/pt_80100.jpg  used on input line 207.
@@ -681,7 +688,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 207--208
  [][] 
  []
 
-<./images//mpt_80100.jpg, id=108, 1282.7925pt x 634.37pt>
+<./images//mpt_80100.jpg, id=120, 1282.7925pt x 634.37pt>
 File: ./images//mpt_80100.jpg Graphic file (type jpg)
 <use ./images//mpt_80100.jpg>
 Package pdftex.def Info: ./images//mpt_80100.jpg  used on input line 213.
@@ -693,7 +700,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 213--214
 
 [2 <./images/pt_2040.jpg> <./images//mpt_2040.jpg> <./images/pt_4060.jpg> <./im
 ages//mpt_4060.jpg> <./images/pt_6080.jpg> <./images//mpt_6080.jpg>]
-<./images/pt_100.jpg, id=120, 1282.7925pt x 634.37pt>
+<./images/pt_100.jpg, id=132, 1282.7925pt x 634.37pt>
 File: ./images/pt_100.jpg Graphic file (type jpg)
 <use ./images/pt_100.jpg>
 Package pdftex.def Info: ./images/pt_100.jpg  used on input line 230.
@@ -703,7 +710,7 @@ Overfull \hbox (24.48126pt too wide) in paragraph at lines 230--231
  [][] 
  []
 
-<./images//mpt_100.jpg, id=121, 1282.7925pt x 634.37pt>
+<./images//mpt_100.jpg, id=133, 1282.7925pt x 634.37pt>
 File: ./images//mpt_100.jpg Graphic file (type jpg)
 <use ./images//mpt_100.jpg>
 Package pdftex.def Info: ./images//mpt_100.jpg  used on input line 236.
@@ -727,31 +734,50 @@ LaTeX Font Warning: Command \large invalid in math mode on input line 269.
 
 LaTeX Font Warning: Command \large invalid in math mode on input line 272.
 
-<./images/mean.jpg, id=143, 1282.7925pt x 634.37pt>
+<./images/mean.jpg, id=155, 1282.7925pt x 634.37pt>
 File: ./images/mean.jpg Graphic file (type jpg)
 <use ./images/mean.jpg>
 Package pdftex.def Info: ./images/mean.jpg  used on input line 299.
-(pdftex.def)             Requested size: 408.00156pt x 201.76353pt.
+(pdftex.def)             Requested size: 367.1989pt x 181.58138pt.
 [4 <./images/mean.jpg>]
+<./images/intvar.jpg, id=164, 1282.7925pt x 634.37pt>
+File: ./images/intvar.jpg Graphic file (type jpg)
+<use ./images/intvar.jpg>
+Package pdftex.def Info: ./images/intvar.jpg  used on input line 317.
+(pdftex.def)             Requested size: 285.59984pt x 141.2364pt.
+<./images/stdskew.jpg, id=165, 1282.7925pt x 634.37pt>
+File: ./images/stdskew.jpg Graphic file (type jpg)
+<use ./images/stdskew.jpg>
+Package pdftex.def Info: ./images/stdskew.jpg  used on input line 333.
+(pdftex.def)             Requested size: 285.59984pt x 141.2364pt.
+<./images/intskew.jpg, id=166, 1282.7925pt x 634.37pt>
+File: ./images/intskew.jpg Graphic file (type jpg)
+<use ./images/intskew.jpg>
+Package pdftex.def Info: ./images/intskew.jpg  used on input line 350.
+(pdftex.def)             Requested size: 285.59984pt x 141.2364pt.
+ [5 <./images/intvar.jpg> <./images/stdskew.jpg> <./images/intskew.jpg>]
 No file Report.bbl.
-[5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
+[6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 398.
  (Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 346.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 398.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 398.
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: BF66398082821A2D9EF35D8BB8F90BA3;1164.
+(rerunfilecheck)             Checksum: 3EAF27B0BC1D1516F76937BAF7564E90;1515.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occured.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 9895 strings out of 480930
- 158749 string characters out of 2895070
- 448043 words of memory out of 3000000
- 25521 multiletter control sequences out of 15000+200000
+ 9933 strings out of 480930
+ 159314 string characters out of 2895070
+ 448290 words of memory out of 3000000
+ 25552 multiletter control sequences out of 15000+200000
  546642 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,20n,70p,1094b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -782,9 +808,9 @@ fb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy9.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Ankan Mukherjee/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report.pdf (5 pages, 628701 bytes).
+Output written on Report.pdf (6 pages, 721426 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 258 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
