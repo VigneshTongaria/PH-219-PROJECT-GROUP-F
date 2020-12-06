@@ -315,22 +315,22 @@ void readtree1()
 
    TLegend *legend1 = new TLegend(0.6,0.7,0.9,0.9);
    legend1->SetHeader("Legend","C");
-   legend1->AddEntry(gr1,"Graph for Mean vs Multiplicity","p");
+   legend1->AddEntry(gr1,"Mean vs Multiplicity","p");
    legend1->AddEntry(gr1,"Line joining the points","l");
    legend1->SetFillColor(kYellow-10);
-   TLegend *legend2 = new TLegend(0.6,0.7,0.9,0.9);
+   TLegend *legend2 = new TLegend(0.5,0.7,0.9,0.9);
    legend2->SetHeader("Legend","C");
-   legend2->AddEntry(gr2,"Graph for Intensive Skewness vs Multiplicity","p");
+   legend2->AddEntry(gr2,"Intensive Skewness vs Multiplicity","p");
    legend2->AddEntry(gr2,"Line joining the points","l");
    legend2->SetFillColor(kYellow-10);
-   TLegend *legend3 = new TLegend(0.6,0.7,0.9,0.9);
+   TLegend *legend3 = new TLegend(0.5,0.7,0.9,0.9);
    legend3->SetHeader("Legend","C");
-   legend3->AddEntry(gr3,"Graph for Standardized Skewness vs Multiplicity","p");
+   legend3->AddEntry(gr3,"Standardized Skewness vs Multiplicity","p");
    legend3->AddEntry(gr3,"Line joining the points","l");
    legend3->SetFillColor(kYellow-10);
-   TLegend *legend4 = new TLegend(0.6,0.7,0.9,0.9);
+   TLegend *legend4 = new TLegend(0.5,0.7,0.9,0.9);
    legend4->SetHeader("Legend","C");
-   legend4->AddEntry(gr4,"Graph for Intensive Skewness vs Multiplicity","p");
+   legend4->AddEntry(gr4,"Intensive Skewness vs Multiplicity","p");
    legend4->AddEntry(gr4,"Line joining the points","l");
    legend4->SetFillColor(kYellow-10);
 
