@@ -1,3 +1,4 @@
+  
 \documentclass[letterpaper,aps,prc,superscriptaddress,nofootinbib,10pt,showpacs,floatfix]{revtex4-2}% PRC format\documentclass[12pt]
 %\usepackage[super]{cite}
 \usepackage{graphicx}
@@ -71,16 +72,20 @@ Write a proper brief abstarct ...
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%The data provided is generated with Pythia 8  Monte Carlo event generator. \\
-%Number of events :  2 million \\
-%Collisions System :  p + p at centre of mass energy 13  TeV.\\
+In the ultrarelativistic nucleus to nucleus collisions, the mean transverse momentum $\mathbf{\left<p_T\right>}$, of the emitted particles fluctuates event to event.
+In this project we will study these fluctuations from event to event of the $\mathbf{\left<p_T\right>}$ and plot them to study this event to event variation. 
+In this project we will argue that the probability distribution of the $\mathbf{\left<p_T\right>}$, is not Gaussian but has a positive skew. 
+We will also calculate \textbf{intensive skewness} and the \textbf{standard skewness} of the $\mathbf{\left<p_T\right>}$.
+Also these fluctuations are not dependent on the specific set-up used in the experiment.\vspace{2mm}\\
+The data provided is generated with \textbf{Pythia 8 Monte Carlo Event Generator}.\vspace{2mm}\\
+Number of events :  \textbf{2 million} \\
+Collisions System :  \textbf{p + p} at centre of mass energy \textbf{13 TeV}\\
 
 
 %Define  the variables, moments and the used formula \\
 
-We shall be using the STAR definition. 
-
+We shall be using the \textbf{STAR definition} for our studies. The formulae used are as given below. The symbol $\left<\right>$ is used to denote the mean of the argument. $N_{ch}$ refers to the number of events corresponding to each multiplicity class.
+\vspace{-5mm}
 \begin{equation}
 \label{eq:1}
 \mathrm{Mean\ Transverse\ Momentum}=\left<\left<p_T\right>\right>=\left<\bfrac{\Sigma_{i=1}^{N_{ch}} p_i}{N_{ch}}\right>
@@ -95,7 +100,22 @@ We shall be using the STAR definition.
 \label{eq:3}
 \mathrm{Intensive\ Variance\ Of\ Transverse\ Momentum}=\sigma_{p_T}=\bfrac{\left<\Delta p_i \Delta p_j\right>^{\sfrac{1}{2}}}{\left<\left<p_T\right>\right>}
 \end{equation}
-
+\vspace{-5mm}
+\begin{equation}
+\label{eq:4}
+\left<\Delta p_i \Delta p_j \Delta p_k\right>=\left<\left(\left<p_t\right>-\left<\left<p_t\right>\right>\right)^3\right>
+\end{equation}
+\vspace{-5mm}
+\begin{equation}
+\label{eq:5}
+\mathrm{Standardized\ Skewness\ Of\ Transverse\ Momentum} = \gamma_{p_T}=\bfrac{\left<\Delta p_i \Delta p_j \Delta p_k\right>}{\left<\Delta p_i \Delta p_j\right>^{\sfrac{3}{2}}}
+\end{equation}
+\vspace{-5mm}
+\begin{equation}
+\label{eq:6}
+\mathrm{ Intensive\ Skewness\ Of\ Transverse\ Momentum}= 
+\Gamma_{p_T}= \bfrac{\left<\Delta p_i \Delta p_j \Delta p_k\right>\left<\left<p_T\right>\right>}{\left<\Delta p_i \Delta p_j\right>^2}
+\end{equation}
 
 
 \section{Experimental Observations }
