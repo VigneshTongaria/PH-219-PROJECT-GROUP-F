@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.7)  6 DEC 2020 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.5.7)  7 DEC 2020 20:06
 entering extended mode
 **./Report.tex
 (Report.tex
@@ -506,29 +506,29 @@ Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 Class revtex4-2 Info: colortbl package is loaded. (Proceeding with fingers cros
-sed.) on input line 40.
-Class revtex4-2 Info: cite was not loaded (OK!) on input line 40.
-Class revtex4-2 Info: mcite was not loaded (OK!) on input line 40.
-Class revtex4-2 Info: multicol was not loaded (OK!) on input line 40.
+sed.) on input line 41.
+Class revtex4-2 Info: cite was not loaded (OK!) on input line 41.
+Class revtex4-2 Info: mcite was not loaded (OK!) on input line 41.
+Class revtex4-2 Info: multicol was not loaded (OK!) on input line 41.
  (Report.aux)
 \openout1 = `Report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/m
 kii\supp-pdf.mkii"
@@ -546,7 +546,7 @@ kii\supp-pdf.mkii"
 \everyMPtoPDFconversion=\toks28
 )
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 41.
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref
 \nameref.sty"
@@ -562,24 +562,24 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count284
 )
-LaTeX Info: Redefining \ref on input line 40.
-LaTeX Info: Redefining \pageref on input line 40.
-LaTeX Info: Redefining \nameref on input line 40.
+LaTeX Info: Redefining \ref on input line 41.
+LaTeX Info: Redefining \pageref on input line 41.
+LaTeX Info: Redefining \nameref on input line 41.
  (Report.out) (Report.out)
 \@outlinefile=\write5
 \openout5 = `Report.out'.
 
-Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 40.
+Class revtex4-2 Info: Taking \maketitle back from hyperref on input line 41.
 \openout3 = `ReportNotes.bib'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 69.
 
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts
 \umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 68.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 69.
 
 
 ("C:\Users\Ankan Mukherjee\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts
@@ -588,175 +588,180 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
+(hyperref)                removing `math shift' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<def>-command' on input line 68.
+(hyperref)                removing `\<def>-command' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\next@' on input line 68.
+(hyperref)                removing `\next@' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\<let>-command' on input line 68.
+(hyperref)                removing `\<let>-command' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\next@' on input line 68.
+(hyperref)                removing `\next@' on input line 69.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
+(hyperref)                removing `math shift' on input line 69.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--83
+
+ []
 
 <./Images/pt_2040.jpg, id=85, 1282.7925pt x 634.37pt>
 File: ./Images/pt_2040.jpg Graphic file (type jpg)
 <use ./Images/pt_2040.jpg>
-Package pdftex.def Info: ./Images/pt_2040.jpg  used on input line 137.
+Package pdftex.def Info: ./Images/pt_2040.jpg  used on input line 157.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 137--138
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 157--158
  [][] 
  []
 
 <./Images//mpt_2040.jpg, id=86, 1282.7925pt x 634.37pt>
 File: ./Images//mpt_2040.jpg Graphic file (type jpg)
 <use ./Images//mpt_2040.jpg>
-Package pdftex.def Info: ./Images//mpt_2040.jpg  used on input line 143.
+Package pdftex.def Info: ./Images//mpt_2040.jpg  used on input line 163.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 143--144
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 163--164
  [][] 
  []
 
 [1{C:/Users/Ankan Mukherjee/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<./Images/pt_4060.jpg, id=115, 1282.7925pt x 634.37pt>
+<./Images/pt_4060.jpg, id=119, 1282.7925pt x 634.37pt>
 File: ./Images/pt_4060.jpg Graphic file (type jpg)
 <use ./Images/pt_4060.jpg>
-Package pdftex.def Info: ./Images/pt_4060.jpg  used on input line 161.
+Package pdftex.def Info: ./Images/pt_4060.jpg  used on input line 181.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 161--162
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 181--182
  [][] 
  []
 
-<./Images//mpt_4060.jpg, id=116, 1282.7925pt x 634.37pt>
+<./Images//mpt_4060.jpg, id=120, 1282.7925pt x 634.37pt>
 File: ./Images//mpt_4060.jpg Graphic file (type jpg)
 <use ./Images//mpt_4060.jpg>
-Package pdftex.def Info: ./Images//mpt_4060.jpg  used on input line 167.
+Package pdftex.def Info: ./Images//mpt_4060.jpg  used on input line 187.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 167--168
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 187--188
  [][] 
  []
 
-<./Images/pt_6080.jpg, id=117, 1282.7925pt x 634.37pt>
+<./Images/pt_6080.jpg, id=121, 1282.7925pt x 634.37pt>
 File: ./Images/pt_6080.jpg Graphic file (type jpg)
 <use ./Images/pt_6080.jpg>
-Package pdftex.def Info: ./Images/pt_6080.jpg  used on input line 184.
+Package pdftex.def Info: ./Images/pt_6080.jpg  used on input line 204.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 184--185
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 204--205
  [][] 
  []
 
-<./Images//mpt_6080.jpg, id=118, 1282.7925pt x 634.37pt>
+<./Images//mpt_6080.jpg, id=122, 1282.7925pt x 634.37pt>
 File: ./Images//mpt_6080.jpg Graphic file (type jpg)
 <use ./Images//mpt_6080.jpg>
-Package pdftex.def Info: ./Images//mpt_6080.jpg  used on input line 190.
+Package pdftex.def Info: ./Images//mpt_6080.jpg  used on input line 210.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 190--191
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 210--211
  [][] 
  []
 
-<./Images/pt_80100.jpg, id=119, 1282.7925pt x 634.37pt>
+<./Images/pt_80100.jpg, id=123, 1282.7925pt x 634.37pt>
 File: ./Images/pt_80100.jpg Graphic file (type jpg)
 <use ./Images/pt_80100.jpg>
-Package pdftex.def Info: ./Images/pt_80100.jpg  used on input line 207.
+Package pdftex.def Info: ./Images/pt_80100.jpg  used on input line 227.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 207--208
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 227--228
  [][] 
  []
 
-<./Images//mpt_80100.jpg, id=120, 1282.7925pt x 634.37pt>
+<./Images//mpt_80100.jpg, id=124, 1282.7925pt x 634.37pt>
 File: ./Images//mpt_80100.jpg Graphic file (type jpg)
 <use ./Images//mpt_80100.jpg>
-Package pdftex.def Info: ./Images//mpt_80100.jpg  used on input line 213.
+Package pdftex.def Info: ./Images//mpt_80100.jpg  used on input line 233.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 213--214
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 233--234
  [][] 
  []
 
 [2 <./Images/pt_2040.jpg> <./Images//mpt_2040.jpg> <./Images/pt_4060.jpg> <./Im
 ages//mpt_4060.jpg> <./Images/pt_6080.jpg> <./Images//mpt_6080.jpg>]
-<./Images/pt_100.jpg, id=132, 1282.7925pt x 634.37pt>
+<./Images/pt_100.jpg, id=136, 1282.7925pt x 634.37pt>
 File: ./Images/pt_100.jpg Graphic file (type jpg)
 <use ./Images/pt_100.jpg>
-Package pdftex.def Info: ./Images/pt_100.jpg  used on input line 230.
+Package pdftex.def Info: ./Images/pt_100.jpg  used on input line 250.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 230--231
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 250--251
  [][] 
  []
 
-<./Images//mpt_100.jpg, id=133, 1282.7925pt x 634.37pt>
+<./Images//mpt_100.jpg, id=137, 1282.7925pt x 634.37pt>
 File: ./Images//mpt_100.jpg Graphic file (type jpg)
 <use ./Images//mpt_100.jpg>
-Package pdftex.def Info: ./Images//mpt_100.jpg  used on input line 236.
+Package pdftex.def Info: ./Images//mpt_100.jpg  used on input line 256.
 (pdftex.def)             Requested size: 269.27908pt x 133.16354pt.
 
-Overfull \hbox (24.48126pt too wide) in paragraph at lines 236--237
+Overfull \hbox (24.48126pt too wide) in paragraph at lines 256--257
  [][] 
  []
 
 [3 <./Images/pt_80100.jpg> <./Images//mpt_80100.jpg> <./Images/pt_100.jpg> <./I
 mages//mpt_100.jpg>]
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 264.
+LaTeX Font Warning: Command \large invalid in math mode on input line 284.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 267.
+LaTeX Font Warning: Command \large invalid in math mode on input line 287.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 269.
+LaTeX Font Warning: Command \large invalid in math mode on input line 289.
 
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 272.
+LaTeX Font Warning: Command \large invalid in math mode on input line 292.
 
-<./Images/mean.jpg, id=156, 1282.7925pt x 634.37pt>
+<./Images/mean.jpg, id=160, 1282.7925pt x 634.37pt>
 File: ./Images/mean.jpg Graphic file (type jpg)
 <use ./Images/mean.jpg>
-Package pdftex.def Info: ./Images/mean.jpg  used on input line 298.
+Package pdftex.def Info: ./Images/mean.jpg  used on input line 318.
 (pdftex.def)             Requested size: 413.09439pt x 204.28026pt.
 [4 <./Images/mean.jpg>]
-<./Images/intvar.jpg, id=165, 1282.7925pt x 634.37pt>
+<./Images/intvar.jpg, id=168, 1282.7925pt x 634.37pt>
 File: ./Images/intvar.jpg Graphic file (type jpg)
 <use ./Images/intvar.jpg>
-Package pdftex.def Info: ./Images/intvar.jpg  used on input line 316.
+Package pdftex.def Info: ./Images/intvar.jpg  used on input line 336.
 (pdftex.def)             Requested size: 413.09439pt x 204.28026pt.
-<./Images/stdskew.jpg, id=166, 1282.7925pt x 634.37pt>
+<./Images/stdskew.jpg, id=169, 1282.7925pt x 634.37pt>
 File: ./Images/stdskew.jpg Graphic file (type jpg)
 <use ./Images/stdskew.jpg>
-Package pdftex.def Info: ./Images/stdskew.jpg  used on input line 332.
+Package pdftex.def Info: ./Images/stdskew.jpg  used on input line 352.
 (pdftex.def)             Requested size: 413.09439pt x 204.28026pt.
  [5 <./Images/intvar.jpg> <./Images/stdskew.jpg>]
-<./Images/intskew.jpg, id=173, 1282.7925pt x 634.37pt>
+<./Images/intskew.jpg, id=176, 1282.7925pt x 634.37pt>
 File: ./Images/intskew.jpg Graphic file (type jpg)
 <use ./Images/intskew.jpg>
-Package pdftex.def Info: ./Images/intskew.jpg  used on input line 349.
+Package pdftex.def Info: ./Images/intskew.jpg  used on input line 369.
 (pdftex.def)             Requested size: 413.09439pt x 204.28026pt.
 
 [6 <./Images/intskew.jpg>]
 No file Report.bbl.
 [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 417.
  (Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 417.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 417.
 Package rerunfilecheck Info: File `Report.out' has not changed.
 (rerunfilecheck)             Checksum: 3EAF27B0BC1D1516F76937BAF7564E90;1515.
 
@@ -764,12 +769,15 @@ Package rerunfilecheck Info: File `Report.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.25pt have occured.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 9936 strings out of 480930
- 159358 string characters out of 2895070
- 448355 words of memory out of 3000000
- 25554 multiletter control sequences out of 15000+200000
+ 9948 strings out of 480930
+ 159518 string characters out of 2895070
+ 453355 words of memory out of 3000000
+ 25563 multiletter control sequences out of 15000+200000
  546642 words of font info for 82 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,20n,70p,1094b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -800,9 +808,9 @@ fb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy9.pfb><C:/Users/Ankan Mukherjee/AppData/Local/Programs/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Ankan Mukherjee/AppDa
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on Report.pdf (7 pages, 722627 bytes).
+Output written on Report.pdf (7 pages, 732384 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 269 PDF objects out of 1000 (max. 8388607)
+ 51 named destinations out of 1000 (max. 500000)
  215 words of extra memory for PDF output out of 10000 (max. 10000000)
 
