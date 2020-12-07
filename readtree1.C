@@ -146,13 +146,13 @@ void readtree1()
 
   *********************************************************************/
 
-  char A[5][15]={"pytree2040","pytree4060","pytree6080","pytree80100","pytree100"};
-  Double_t B[]={20,40,60,80,100};
-  Double_t s1[]={0.0,0.0,0.0,0.0,0.0};
-  Double_t s2[]={0.0,0.0,0.0,0.0,0.0};
-  Double_t s3[]={0.0,0.0,0.0,0.0,0.0};
-  Double_t s4[]={0.0,0.0,0.0,0.0,0.0};
-  int n=5;
+  char A[6][15]={"pytree020","pytree2040","pytree4060","pytree6080","pytree80100","pytree100"};
+  Double_t B[]={0,20,40,60,80,100};
+  Double_t s1[]={0.0,0.0,0.0,0.0,0.0,0.0};
+  Double_t s2[]={0.0,0.0,0.0,0.0,0.0,0.0};
+  Double_t s3[]={0.0,0.0,0.0,0.0,0.0,0.0};
+  Double_t s4[]={0.0,0.0,0.0,0.0,0.0,0.0};
+  int n=6;
 
   TFile *f=new TFile("13TeV_CR0_RHoff.root");
   for(int I=0;I<n;I++)
@@ -160,7 +160,12 @@ void readtree1()
       TTree *tree = (TTree*)f->Get(A[I]);
       Int_t entries = tree->GetEntries();
 
-      const Int_t maxTrack=10000;
+      if(I==0)
+      {
+        entries=(int)(0.4*entries);
+      }
+
+      const Int_t maxTrack=50000;
 
 
 
@@ -211,7 +216,6 @@ void readtree1()
       {
             tree->GetEntry(ii);
             Int_t ntrks = ntrack;
-            NT[ii]=ntrks;
             q2+=Q2(pT,ntrks,q1);
             q3+=Q3(pT,ntrks,q1);
       }

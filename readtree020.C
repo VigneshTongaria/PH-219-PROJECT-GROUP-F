@@ -1,4 +1,4 @@
-void readtree()
+void readtree020()
 {
   
   /*********************************************************************
@@ -31,7 +31,7 @@ void readtree()
 
   *********************************************************************/
 
-  char a[]="pytree6080";
+  char a[]="pytree020";
   char a1[]="Histogram for pT for ";
   char a2[]="Histogram for <pT> for ";
   char b1[100];
@@ -73,7 +73,7 @@ void readtree()
 
   TFile *f=new TFile("13TeV_CR0_RHoff.root");
   TTree *tree = (TTree*)f->Get(a);
-  Int_t entries = tree->GetEntries();
+  Int_t entries = (int)(0.4*tree->GetEntries());
 
   const Int_t maxTrack=10000;
 
