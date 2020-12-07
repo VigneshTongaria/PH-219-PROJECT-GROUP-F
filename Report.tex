@@ -77,51 +77,63 @@ Write a proper brief abstarct ...
 
 
 
-For a given collision centrality, the mean transverse momentum $\langle p_T\rangle$ of emitted particles in ultrarelativistic nucleus-nucleus collisions fluctuates from one event to another. The distribution of  in event-by-
-event hydrodynamics.
+For a given collision centrality, the mean transverse momentum $\mathbf{\langle  p_T\rangle}$ of emitted particles in ultrarelativistic nucleus-nucleus collisions fluctuates from one event to another. The distribution of $\mathbf{\langle  p_T\rangle}$ in event-by-event dynamics reflects the various statistical and dynamical fluctuations.
  
-In this project, through our plots, we will show that the probability distribution of $\langle p_T\rangle$, is not Gaussian but has positive skew.
+So, in this project, through our plots, we will show that the probability distribution of $\mathbf{\langle  p_T\rangle}$ is \textbf{not Gaussian} but has \textbf{positive skew}, which arises because of the above-mentioned fluctuations.
 
-We shall be using the following definitions as per the STAR collaboration.
+We then go on to plot two dimensionless measures of skewness versus different multiplicity classes, namely \textbf{standardized skewness} and \textbf{intensive skewness}, out of which the first depends on centrality and system size, whereas the second has the property of being independent of the system size. Since these are dimensional quantities, both of these are expected to be less sensitive to analysis details,
+such as those dependent on the detector.
 
+We shall be using the following definitions as per the \textbf{STAR} collaboration.
+\vspace{-1mm}
 \begin{equation}
 \label{eq:1}
-\mathrm{Mean\ Transverse\ Momentum}=\left<\left<p_T\right>\right>=\left<\bfrac{\Sigma_{i=1}^{N_{ch}} p_i}{N_{ch}}\right>
+\mathrm{Mean\ Transverse\ Momentum}=\langle \langle p_T\rangle \rangle =\langle \bfrac{\Sigma_{i=1}^{N_{ch}} p_i}{N_{ch}}\rangle 
 \end{equation}
 
-where $N_{ch}$ denotes the number of charged particles in an event, $p_i$ is the transverse momentum of the $i$th particle, and angular brackets denote an average over events in a centrality class.
+where $N_{ch}$ denotes the number of charged particles in an event, $p_i$ is the transverse momentum of the $i$th particle and angular brackets denote an average over events in a centrality class.
 
-We analyze the variance of dynamical $p_T$ fluctuations which we denote by $\left<\Delta p_i \Delta p_j\right>$,
+We analyze the variance of dynamical $p_T$ fluctuations which we denote by $\langle \Delta p_i \Delta p_j\rangle $,
 \begin{equation}
 \label{eq:2}
-\left<\Delta p_i \Delta p_j\right>=\left<\left(\left<p_T\right>-\left<\left<p_T\right>\right>\right)^2\right>
+\langle \Delta p_i \Delta p_j \rangle =\langle \bfrac{\Sigma_{i,j\neq i} {(p_i-\langle \langle p_T\rangle \rangle )(p_j-\langle \langle p_T\rangle \rangle )}}{N_{ch}(N_{ch}-1)}\rangle 
+\end{equation}
+which can also be written as
+\begin{equation}
+\label{eq:3}
+\langle \Delta p_i \Delta p_j\rangle =\langle \left(\langle p_T\rangle -\langle \langle p_T\rangle \rangle \right)^2\rangle 
 \end{equation}
 and the intensive variance of transverse momentum which is defined as follows
 \begin{equation}
-\label{eq:3}
-\sigma_{p_T}=\bfrac{\left<\Delta p_i \Delta p_j\right>^{\sfrac{1}{2}}}{\left<\left<p_T\right>\right>}.
-\end{equation}
-The skewness is the third centered moment, denoted by $\left<\Delta p_i \Delta p_j \Delta p_k\right>$ defined as follows
-\begin{equation}
 \label{eq:4}
-\left<\Delta p_i \Delta p_j \Delta p_k\right>=\left<\bfrac{\Sigma_{i,j\neq i, k\neq i,j} {(p_i-\left<\left<p_T\right>\right>)(p_j-\left<\left<p_T\right>\right>)(p_k-\left<\left<p_T\right>\right>)}}{N_{ch}(N_{ch}-1)(N_{ch}-2)}\right>
+\sigma_{p_T}=\bfrac{\langle \Delta p_i \Delta p_j\rangle ^{\sfrac{1}{2}}}{\langle \langle p_T\rangle \rangle }.
 \end{equation}
-Standardized skewness and intensive skewness denoted by $\gamma_{p_T}$ and $\Gamma_{p_T}$ respectively are defined as follows
+The skewness is the third central moment, denoted by $\langle \Delta p_i \Delta p_j \Delta p_k\rangle $ defined as follows
 \begin{equation}
 \label{eq:5}
-\gamma_{p_T}=\bfrac{\left<\Delta p_i \Delta p_j \Delta p_k\right>}{\left<\Delta p_i \Delta p_j\right>^{\sfrac{3}{2}}}
+\langle \Delta p_i \Delta p_j \Delta p_k\rangle =\langle \bfrac{\Sigma_{i,j\neq i, k\neq i,j} {(p_i-\langle \langle p_T\rangle \rangle )(p_j-\langle \langle p_T\rangle \rangle )(p_k-\langle \langle p_T\rangle \rangle )}}{N_{ch}(N_{ch}-1)(N_{ch}-2)}\rangle 
 \end{equation}
+which can also be written as
 \begin{equation}
 \label{eq:6}
-\Gamma_{p_T}= \bfrac{\left<\Delta p_i \Delta p_j \Delta p_k\right>\left<\left<p_T\right>\right>}{\left<\Delta p_i \Delta p_j\right>^2}
+\langle \Delta p_i \Delta p_j\rangle =\langle \left(\langle p_T\rangle -\langle \langle p_T\rangle \rangle \right)^3\rangle 
+\end{equation}
+Standardized skewness and intensive skewness denoted by $\gamma_{p_T}$ and $\Gamma_{p_T}$, respectively, are defined as follows:
+\begin{equation}
+\label{eq:7}
+\gamma_{p_T}=\bfrac{\langle \Delta p_i \Delta p_j \Delta p_k\rangle }{\langle \Delta p_i \Delta p_j\rangle ^{\sfrac{3}{2}}}
+\end{equation}
+\begin{equation}
+\label{eq:8}
+\Gamma_{p_T}= \bfrac{\langle \Delta p_i \Delta p_j \Delta p_k\rangle \langle \langle p_T\rangle \rangle }{\langle \Delta p_i \Delta p_j\rangle ^2}
 \end{equation}
 
 
-The data provided is generated with Pythia 8  Monte Carlo event generator. \\
-Number of events :  2 million \\
-Collisions System :  p + p at centre of mass energy 13 TeV.\\
+The dataset provided is generated with \textbf{Pythia 8 Monte Carlo Event Generator}. \\
+Number of events :  \textbf{2 million} \\
+Collisions System :  \textbf{p + p} at centre of mass energy \textbf{13 TeV}\\
 
-
+\vspace{-3mm}
 %Define  the variables, moments and the used formula \\
 
 \section{Experimental Observations }
@@ -147,7 +159,7 @@ Collisions System :  p + p at centre of mass energy 13 TeV.\\
 
 
 \subsection{Transverse Momentum and Mean Transverse Momentum for Each Multiplicity Class}
-In this section, we have plotted the histograms for the Transverse Momentum $\mathbf{pT}$ and the Mean Transverse Momentum $\mathbf{\left<pT\right>}$ of proton-proton collisions corresponding to each multiplicity class. The histogram for $\mathbf{pT}$ is then approximated using an \textbf{Exponential} fit, while that of $\mathbf{\left<pT\right>}$ has been approximated using a \textbf{Gaussian} fit. Both the quantities $\mathbf{pT}$ and $\mathbf{\left<pT\right>}$ have statistical fluctuations arising from the finite number of particles in each event. In each of the subsequent subsections corresponding to each of the 5 multiplicity classes, namely \hyperref[subsubsec:2040]{\textbf{pytree2040}}, \hyperref[subsubsec:4060]{\textbf{pytree4060}}, \hyperref[subsubsec:6080]{\textbf{pytree6080}}, \hyperref[subsubsec:80100]{\textbf{pytree80100}} and \hyperref[subsubsec:100]{\textbf{pytree100}}, the histograms and the corresponding fits have been plotted. A logarithmic scale has been used on the \emph{y-axis} in order to emphasize the skewness of the data. 
+In this section, we have plotted the histograms for the Transverse Momentum $\mathbf{pT}$ and the Mean Transverse Momentum $\mathbf{\langle pT\rangle }$ of proton-proton collisions corresponding to each multiplicity class. The histogram for $\mathbf{pT}$ is then approximated using an \textbf{Exponential} fit, while that of $\mathbf{\langle pT\rangle }$ has been approximated using a \textbf{Gaussian} fit. Both the quantities $\mathbf{pT}$ and $\mathbf{\langle pT\rangle }$ have statistical fluctuations arising from the finite number of particles in each event. In each of the subsequent subsections corresponding to each of the 5 multiplicity classes, namely \hyperref[subsubsec:2040]{\textbf{pytree2040}}, \hyperref[subsubsec:4060]{\textbf{pytree4060}}, \hyperref[subsubsec:6080]{\textbf{pytree6080}}, \hyperref[subsubsec:80100]{\textbf{pytree80100}} and \hyperref[subsubsec:100]{\textbf{pytree100}}, the histograms and the corresponding fits have been plotted. A logarithmic scale has been used on the \emph{y-axis} in order to emphasize the skewness of the data. 
 
 
 
@@ -167,7 +179,7 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
      \centering
      \renewcommand{\thefigure}{1b}
      \includegraphics[width=1.1\linewidth]{/mpt_2040}
-     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree2040}. The solid line is a Gaussian fit to the data.}
+     \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree2040}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
 \end{figure}
 
@@ -191,7 +203,7 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
      \centering
      \renewcommand{\thefigure}{2b}
      \includegraphics[width=1.1\linewidth]{/mpt_4060}
-     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree4060}. The solid line is a Gaussian fit to the data.}
+     \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree4060}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
 \end{figure}
 
@@ -214,7 +226,7 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
      \centering
      \renewcommand{\thefigure}{3b}
      \includegraphics[width=1.1\linewidth]{/mpt_6080}
-     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree6080}. The solid line is a Gaussian fit to the data.}
+     \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree6080}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
 \end{figure}
 
@@ -237,7 +249,7 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
      \centering
      \renewcommand{\thefigure}{4b}
      \includegraphics[width=1.1\linewidth]{/mpt_80100}
-     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree80100}. The solid line is a Gaussian fit to the data.}
+     \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree80100}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
 \end{figure}
 
@@ -260,7 +272,7 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
      \centering
      \renewcommand{\thefigure}{5b}
      \includegraphics[width=1.1\linewidth]{/mpt_100}
-     \caption{(Color Online) Distribution of $\mathbf{\left<pT\right>}$ for proton-proton collision in the multiplicity class \textbf{pytree100}. The solid line is a Gaussian fit to the data.}
+     \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree100}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
 \end{figure}
 
@@ -272,7 +284,7 @@ From the graphs in \hyperref[Fig:1a]{FIG. 1a.}, \hyperref[Fig:2a]{FIG. 2a.}, \hy
 In this section, we shall analyse the moments of the distribution of Transverse Momentum. We shall calculate the Mean, Variance and Skewness of the Transverse Momenta for each multiplicity class and study its relation with the multiplicity class. For each of the multiplicity classes, the Mean Transverse Momentum, the Intensive Variance of the Transverse Momentum, the Standardized Skewness of the Transverse Momentum and the Intensive Skewness of the Transverse Momentum, calculated using formulae \ref{eq:1}, \ref{eq:3}, \ref{eq:5} and \ref{eq:6} respectively have been summarised in the \hyperref[subsubsec:summary]{table} and the \hyperref[subsubsec:mean]{plots} below.
 
 %\pagebreak
-\newpage
+%\newpage
 
 \subsubsection{Summary of Data}
 \label{subsubsec:summary}
@@ -287,7 +299,7 @@ The table below summarizes the data.
 		\addmathvspace\textbf{Multiplicity Class} & 
 		$\mathbf{Events}$ & 
 		\begin{tabular}{c}
-			$\large\mathbf{\left<p_T\right>}$\\[2pt]
+			$\large\mathbf{\langle p_T\rangle }$\\[2pt]
 			\textbf{(GeV/c)}
 		\end{tabular} &
 		$\large\mathbf{\sigma_{p_T}}$ & 
@@ -295,15 +307,17 @@ The table below summarizes the data.
 			$\large\mathbf{\gamma_{p_T}}$\\[2pt]
 			\textbf{(GeV/c)}
 		\end{tabular} &		 
-		$\large\mathbf{\Gamma_{p_T}}$\\[10pt]
+		$\large\mathbf{\Gamma_{p_T}}$\\[5pt]
 		\hline
-		\textit{pytree2040}&\addmathvspace873322&0.869307&0.174974&1.77742&10.1582\\[5pt]
+		\textit{pytree020}&\addmathvspace952256&0.750912&0.235453&1.22572&5.20581\\[3pt]
 		\hline
-		\textit{pytree4060}&\addmathvspace445805&0.940521&0.144591&1.80884&12.51\\[5pt]
+		\textit{pytree2040}&\addmathvspace873322&0.869307&0.174974&1.77742&10.1582\\[3pt]
 		\hline
-		\textit{pytree6080}&\addmathvspace207990&0.99074&0.130471&3.11451&23.8714\\[5pt]
+		\textit{pytree4060}&\addmathvspace445805&0.940521&0.144591&1.80884&12.51\\[3pt]
 		\hline
-		\textit{pytree80100}&\addmathvspace71263&1.03006&0.122603&1.64507&13.4178\\[5pt]
+		\textit{pytree6080}&\addmathvspace207990&0.99074&0.130471&3.11451&23.8714\\[3pt]
+		\hline
+		\textit{pytree80100}&\addmathvspace71263&1.03006&0.122603&1.64507&13.4178\\[3pt]
 		\hline
 		\textit{pytree100}&\addmathvspace20981&1.07257&0.132207&4.11805&31.1485\\[5pt]
 		\hline		
@@ -312,72 +326,80 @@ The table below summarizes the data.
 \end{table}
 
 \FloatBarrier
-
+\pagebreak
 \subsubsection{Mean Transverse Momentum versus Multiplicity Class}
 \label{subsubsec:mean}
 \vspace{-5mm}
 \begin{figure}[!htb]
-	\begin{minipage}{0.9\textwidth}
+	\begin{minipage}{1\textwidth}
    		\label{Fig:6}
      	\centering
      	\renewcommand{\thefigure}{6}
-     	\includegraphics[width=0.9\linewidth]{mean}
+     	\includegraphics[width=\linewidth]{mean}
+     	\begin{minipage}{0.8\textwidth}
      	\caption{(Color Online) A plot of \textbf{mean} transverse momenta versus multiplicity class. The red dots represent the mean of the transverse momentum. The solid line shows the trend of the mean against the multiplicity class.}
+     	\end{minipage}
      \end{minipage}
 \end{figure}
 
 \FloatBarrier
 \vspace{-3mm}
-\pagebreak
 
 
 \subsubsection{Intensive Variance of Transverse Momentum versus Multiplicity Class}
 \label{subsubsec:intvar}
 \vspace{-5mm}
 \begin{figure}[!htb]
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{\textwidth}
    \label{Fig:7}
      \centering
      \renewcommand{\thefigure}{7}
-     \includegraphics[width=0.9\linewidth]{intvar}
+     \includegraphics[width=\linewidth]{intvar}
+     \begin{minipage}{0.8\textwidth}
      \caption{(Color Online) A plot of the \textbf{intensive variance} of transverse momenta versus multiplicity class. The green boxes represent the intensive variance of the transverse momentum. The dashed line shows the trend of the intensive variance against the multiplicity class.}
+     \end{minipage}
 \end{minipage}
 \end{figure}
 
 \FloatBarrier
 \vspace{-3mm}
+\pagebreak
 
 \subsubsection{Standardized Skewness of Transverse Momentum versus Multiplicity Class}
 \label{subsubsec:stdskew}
 \vspace{-5mm}
 \begin{figure}[!htb]
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{\textwidth}
    \label{Fig:8}
      \centering
      \renewcommand{\thefigure}{8}
-     \includegraphics[width=0.9\linewidth]{stdskew}
+     \includegraphics[width=\linewidth]{stdskew}
+     \begin{minipage}{0.8\textwidth}
      \caption{(Color Online) A plot of the \textbf{standardized skewness} of transverse momenta versus multiplicity class. The blue triangles represent the standardized skewness of the transverse momentum. The dashed line shows the trend of the standardized skewness against the multiplicity class.}
+     \end{minipage}     
 \end{minipage}
 \end{figure}
 
 \FloatBarrier
 \vspace{-1mm}
-\pagebreak
 
 \subsubsection{Intensive Skewness of Transverse Momentum versus Multiplicity Class}
 \label{subsubsec:intskew}
 \vspace{-5mm}
 \begin{figure}[!htb]
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{\textwidth}
    \label{Fig:9}
      \centering
      \renewcommand{\thefigure}{9}
-     \includegraphics[width=0.9\linewidth]{intskew}
+     \includegraphics[width=\linewidth]{intskew}
+     \begin{minipage}{0.8\textwidth}
      \caption{(Color Online) A plot of the \textbf{intensive skewness} of transverse momenta versus multiplicity class. The cyan stars represent the intensive skewness of the transverse momentum. The dashed line shows the trend of the intensive skewness against the multiplicity class.}
+     \end{minipage}
+     
 \end{minipage}
 \end{figure}
 
-
+\pagebreak
 
 
 

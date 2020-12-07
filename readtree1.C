@@ -15,11 +15,27 @@ Double_t mean(Double_t *x, Int_t n)
 }
 Double_t Q2(Double_t *x, Int_t n, Double_t mu)
 {
-    return TMath::Power((TMath::Mean(x,x+n)-mu),2);
+    double z=TMath::Power((TMath::Mean(x,x+n)-mu),2);
+    if(TMath::IsNaN(z))
+    {
+        return 0;
+	}
+    else
+    {
+        return z;
+	}
 }
 Double_t Q3(Double_t *x, Int_t n, Double_t mu)
 {
-    return TMath::Power((TMath::Mean(x,x+n)-mu),3);
+    double z=TMath::Power((TMath::Mean(x,x+n)-mu),3);
+    if(TMath::IsNaN(z))
+    {
+        return 0;
+	}
+    else
+    {
+        return z;
+	}
 }
 
 
@@ -250,10 +266,10 @@ void readtree1()
   TCanvas *c2 = new TCanvas("c2","Intensive Variance",200,10,500,300);
   TCanvas *c3 = new TCanvas("c3","Standardized Skewness",200,10,500,300);
   TCanvas *c4 = new TCanvas("c4","Intensive Skewness",200,10,500,300);
-  TGraph* gr1 = new TGraph(5,B,s1);
-  TGraph* gr2 = new TGraph(5,B,s2);
-  TGraph* gr3 = new TGraph(5,B,s3);
-  TGraph* gr4 = new TGraph(5,B,s4);
+  TGraph* gr1 = new TGraph(n,B,s1);
+  TGraph* gr2 = new TGraph(n,B,s2);
+  TGraph* gr3 = new TGraph(n,B,s3);
+  TGraph* gr4 = new TGraph(n,B,s4);
 
 
   gr1->SetMarkerStyle(20);
