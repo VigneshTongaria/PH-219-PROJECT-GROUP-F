@@ -19,7 +19,8 @@
 \usepackage[table]{xcolor}
 \usepackage{array}
 \usepackage{changepage}
-
+\usepackage{float}
+\usepackage{enumitem}
 
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
@@ -42,9 +43,12 @@
 
 %\titile{
 %in pp collisions at 13 TeV with Pythia 8}
-\title{ Measurement of higher moments of   $\cdots$}
+\title{MEASUREMENT OF THE HIGHER MOMENTS OF TRANSVERSE MOMENTUM OF CHARGED PARTICLES IN PROTON-PROTON COLLISIONS}
 \author{Ankan Mukherjee} 
 \email{190260008@iitb.ac.in}
+\affiliation{Indian Institute of Technology Bombay, Mumbai, India}
+\author{Divyansh Singh Gehlot}
+\email{190100047@iitb.ac.in}
 \affiliation{Indian Institute of Technology Bombay, Mumbai, India}
 \author{Drishti Baruah}
 \email{190260019@iitb.ac.in}
@@ -56,6 +60,7 @@
 \email{190260042@iitb.ac.in}
 \affiliation{Indian Institute of Technology Bombay, Mumbai, India}
 
+
 %\email{ashutosh.kumar.pandey@cern.ch}
 %\email{sadhana@phy.iitb.ac.in}
 
@@ -65,16 +70,19 @@
 
 
 \maketitle
-
+\vspace{-10mm}
 \section*{Abstract}
-\begin{adjustwidth}{50pt}{50pt}
+\vspace{-2mm}
+\begin{adjustwidth}{20pt}{20pt}
 We aim to analyse p-p collisions by the studying the transverse momenta of the ejected particles. We reproduce the results obtained by Giuliano Giacalone, Fernando G. Gardim {\it et al} in their paper on mean transverse momentum fluctuations in heavy-ion collisions \cite{fluct}. Using the data generated from the Pythia 8 generator, we plot the mean transverse momenta of multiple p-p collisions. We verify the positively skewed deviation of mean transverse momentum $\mathbf{\langle p_T \rangle}$  from Gaussian distribution. First, we divide the data into different multiplicity classes and plot the distribution of $\mathbf{p_T}$ and $\mathbf{\langle  p_T\rangle}$. Then we observe how mean and intensive variance of $\mathbf{p_T}$ changes over different multiplicity classes. Finally, we find intensive and standardized skewness of $\mathbf{p_T}$ for different multiplicity classes. 
 \end{adjustwidth}
-\vspace{10pt}
+
+
+\vspace{-2mm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{-2mm}
 
 
 For a given collision centrality, the mean transverse momentum $\mathbf{\langle  p_T\rangle}$ of emitted particles in ultrarelativistic nucleus-nucleus collisions fluctuates from one event to another. The distribution of $\mathbf{\langle  p_T\rangle}$ in event-by-event dynamics reflects the various statistical and dynamical fluctuations.
@@ -116,7 +124,7 @@ The skewness is the third central moment, denoted by $\langle \Delta p_i \Delta 
 which can also be written as
 \begin{equation}
 \label{eq:6}
-\langle \Delta p_i \Delta p_j\rangle =\langle \left(\langle p_T\rangle -\langle \langle p_T\rangle \rangle \right)^3\rangle 
+\langle \Delta p_i \Delta p_j \Delta p_k \rangle =\langle \left(\langle p_T\rangle -\langle \langle p_T\rangle \rangle \right)^3\rangle 
 \end{equation}
 Standardized skewness and intensive skewness denoted by $\gamma_{p_T}$ and $\Gamma_{p_T}$, respectively, are defined as follows:
 \begin{equation}
@@ -159,7 +167,32 @@ Collisions System :  \textbf{p + p} at centre of mass energy \textbf{13 TeV}\\
 
 
 \subsection{Transverse Momentum and Mean Transverse Momentum for Each Multiplicity Class}
-In this section, we have plotted the histograms for the Transverse Momentum $\mathbf{pT}$ and the Mean Transverse Momentum $\mathbf{\langle pT\rangle }$ of proton-proton collisions corresponding to each multiplicity class. The histogram for $\mathbf{pT}$ is then approximated using an \textbf{Exponential} fit, while that of $\mathbf{\langle pT\rangle }$ has been approximated using a \textbf{Gaussian} fit. Both the quantities $\mathbf{pT}$ and $\mathbf{\langle pT\rangle }$ have statistical fluctuations arising from the finite number of particles in each event. In each of the subsequent subsections corresponding to each of the 5 multiplicity classes, namely \hyperref[subsubsec:2040]{\textbf{pytree2040}}, \hyperref[subsubsec:4060]{\textbf{pytree4060}}, \hyperref[subsubsec:6080]{\textbf{pytree6080}}, \hyperref[subsubsec:80100]{\textbf{pytree80100}} and \hyperref[subsubsec:100]{\textbf{pytree100}}, the histograms and the corresponding fits have been plotted. A logarithmic scale has been used on the \emph{y-axis} in order to emphasize the skewness of the data. 
+In this section, we have plotted the histograms for the Transverse Momentum $\mathbf{pT}$ and the Mean Transverse Momentum $\mathbf{\langle pT\rangle }$ of proton-proton collisions corresponding to each multiplicity class. The histogram for $\mathbf{pT}$ is then approximated using an \textbf{Exponential} fit, while that of $\mathbf{\langle pT\rangle }$ has been approximated using a \textbf{Gaussian} fit. Both the quantities $\mathbf{pT}$ and $\mathbf{\langle pT\rangle }$ have statistical fluctuations arising from the finite number of particles in each event. In each of the subsequent subsections corresponding to each of the 6 multiplicity classes, namely \hyperref[subsubsec:020]{\textbf{pytree020}}, \hyperref[subsubsec:2040]{\textbf{pytree2040}}, \hyperref[subsubsec:4060]{\textbf{pytree4060}}, \hyperref[subsubsec:6080]{\textbf{pytree6080}}, \hyperref[subsubsec:80100]{\textbf{pytree80100}} and \hyperref[subsubsec:100]{\textbf{pytree100}}, the histograms and the corresponding fits have been plotted. A logarithmic scale has been used on the \emph{y-axis} in order to emphasize the skewness of the data. 
+
+
+\subsubsection{Multiplicity Class "pytree020"}
+\label{subsubsec:020}
+\vspace{-5mm}
+\begin{figure}[!htb]
+   \begin{minipage}{0.48\textwidth}
+   \label{Fig:1a}
+   \label{Fig:1b}
+     \centering
+     \renewcommand{\thefigure}{1a}
+     \includegraphics[width=1.1\linewidth]{pt_020}
+     \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree020}. The solid line is an Exponential fit to the data. Owing to the large size of the data, the data has been arranged in a random order and only the first \textbf{40\%} of the data has been used for analysis.}
+   \end{minipage}\hfill
+   \begin{minipage}{0.48\textwidth}
+     \centering
+     \renewcommand{\thefigure}{1b}
+     \includegraphics[width=1.1\linewidth]{/mpt_020}
+     \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree020}. The solid line is a Gaussian fit to the data. Owing to the large size of the data, the data has been arranged in a random order and only the first \textbf{40\%} of the data has been used for analysis.}
+   \end{minipage}
+\end{figure}
+
+\FloatBarrier
+\vspace{-3mm}
+\pagebreak
 
 
 
@@ -168,16 +201,16 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
 \vspace{-5mm}
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
-   \label{Fig:1a}
-   \label{Fig:1b}
+   \label{Fig:2a}
+   \label{Fig:2b}
      \centering
-     \renewcommand{\thefigure}{1a}
+     \renewcommand{\thefigure}{2a}
      \includegraphics[width=1.1\linewidth]{pt_2040}
      \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree2040}. The solid line is an Exponential fit to the data.}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
-     \renewcommand{\thefigure}{1b}
+     \renewcommand{\thefigure}{2b}
      \includegraphics[width=1.1\linewidth]{/mpt_2040}
      \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree2040}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
@@ -192,16 +225,16 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
 \vspace{-5mm}
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
-   \label{Fig:2a}
-   \label{Fig:2b}
+   \label{Fig:3a}
+   \label{Fig:3b}
      \centering
-     \renewcommand{\thefigure}{2a}
+     \renewcommand{\thefigure}{3a}
      \includegraphics[width=1.1\linewidth]{pt_4060}
      \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree4060}. The solid line is an Exponential fit to the data.}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
-     \renewcommand{\thefigure}{2b}
+     \renewcommand{\thefigure}{3b}
      \includegraphics[width=1.1\linewidth]{/mpt_4060}
      \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree4060}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
@@ -215,16 +248,16 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
 \vspace{-5mm}
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
-   \label{Fig:3a}
-   \label{Fig:3b}
+   \label{Fig:4a}
+   \label{Fig:4b}
      \centering
-     \renewcommand{\thefigure}{3a}
+     \renewcommand{\thefigure}{4a}
      \includegraphics[width=1.1\linewidth]{pt_6080}
      \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree6080}. The solid line is an Exponential fit to the data.}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
-     \renewcommand{\thefigure}{3b}
+     \renewcommand{\thefigure}{4b}
      \includegraphics[width=1.1\linewidth]{/mpt_6080}
      \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree6080}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
@@ -238,16 +271,16 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
 \vspace{-5mm}
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
-   \label{Fig:4a}
-   \label{Fig:4b}
+   \label{Fig:5a}
+   \label{Fig:5b}
      \centering
-     \renewcommand{\thefigure}{4a}
+     \renewcommand{\thefigure}{5a}
      \includegraphics[width=1.1\linewidth]{pt_80100}
      \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree80100}. The solid line is an Exponential fit to the data.}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
-     \renewcommand{\thefigure}{4b}
+     \renewcommand{\thefigure}{5b}
      \includegraphics[width=1.1\linewidth]{/mpt_80100}
      \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree80100}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
@@ -261,16 +294,16 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
 \vspace{-5mm}
 \begin{figure}[!htb]
    \begin{minipage}{0.48\textwidth}
-   \label{Fig:5a}
-   \label{Fig:5b}
+   \label{Fig:6a}
+   \label{Fig:6b}
      \centering
-     \renewcommand{\thefigure}{5a}
+     \renewcommand{\thefigure}{6a}
      \includegraphics[width=1.1\linewidth]{pt_100}
      \caption{(Color Online) Distribution of $\mathbf{pT}$ for proton-proton collision in the multiplicity class \textbf{pytree100}. The solid line is an Exponential fit to the data.}
    \end{minipage}\hfill
    \begin{minipage}{0.48\textwidth}
      \centering
-     \renewcommand{\thefigure}{5b}
+     \renewcommand{\thefigure}{6b}
      \includegraphics[width=1.1\linewidth]{/mpt_100}
      \caption{(Color Online) Distribution of $\mathbf{\langle pT\rangle }$ for proton-proton collision in the multiplicity class \textbf{pytree100}. The solid line is a Gaussian fit to the data.}
    \end{minipage}
@@ -279,11 +312,11 @@ In this section, we have plotted the histograms for the Transverse Momentum $\ma
 \FloatBarrier
 
 \subsection{Analysis of Mean, Variance and Skewness Versus Multiplicity Class}
-From the graphs in \hyperref[Fig:1a]{FIG. 1a.}, \hyperref[Fig:2a]{FIG. 2a.}, \hyperref[Fig:3a]{FIG. 3a.}, \hyperref[Fig:4a]{FIG. 4a.} and \hyperref[Fig:5a]{FIG. 5a.}, it is clear that the Transverse Momenta of the particles produced in a proton-proton collision follows approximately an \textbf{exponential distribution}. Graphs in \hyperref[Fig:1b]{FIG. 1b.}, \hyperref[Fig:2b]{FIG. 2b.}, \hyperref[Fig:3b]{FIG. 3b.}, \hyperref[Fig:4b]{FIG. 4b.} and \hyperref[Fig:5b]{FIG. 5b.} reveal that there is some \textbf{positive skew} in the distribution of the Mean Transverse Momentum.
+From the graphs in \hyperref[Fig:1a]{FIG. 1a.}, \hyperref[Fig:2a]{FIG. 2a.}, \hyperref[Fig:3a]{FIG. 3a.}, \hyperref[Fig:4a]{FIG. 4a.}, \hyperref[Fig:5a]{FIG. 5a.} and hyperref[Fig:6a]{FIG. 6a.}, it is clear that the Transverse Momenta of the particles produced in a proton-proton collision follows approximately an \textbf{exponential distribution}. Graphs in \hyperref[Fig:1b]{FIG. 1b.}, \hyperref[Fig:2b]{FIG. 2b.}, \hyperref[Fig:3b]{FIG. 3b.}, \hyperref[Fig:4b]{FIG. 4b.}, \hyperref[Fig:5b]{FIG. 5b.} and hyperref[Fig:6b]{FIG. 6b.} reveal that there is some \textbf{positive skew} in the distribution of the Mean Transverse Momentum.
 \\
-In this section, we shall analyse the moments of the distribution of Transverse Momentum. We shall calculate the Mean, Variance and Skewness of the Transverse Momenta for each multiplicity class and study its relation with the multiplicity class. For each of the multiplicity classes, the Mean Transverse Momentum, the Intensive Variance of the Transverse Momentum, the Standardized Skewness of the Transverse Momentum and the Intensive Skewness of the Transverse Momentum, calculated using formulae \ref{eq:1}, \ref{eq:3}, \ref{eq:5} and \ref{eq:6} respectively have been summarised in the \hyperref[subsubsec:summary]{table} and the \hyperref[subsubsec:mean]{plots} below.
+In this section, we shall analyse the moments of the distribution of Transverse Momentum. We shall calculate the Mean, Variance and Skewness of the Transverse Momenta for each multiplicity class and study its relation with the multiplicity class. For each of the multiplicity classes, the Mean Transverse Momentum, the Intensive Variance of the Transverse Momentum, the Standardized Skewness of the Transverse Momentum and the Intensive Skewness of the Transverse Momentum, calculated using formulae \ref{eq:1}, \ref{eq:4}, \ref{eq:7} and \ref{eq:8} respectively have been summarised in the \hyperref[subsubsec:summary]{table} and the \hyperref[subsubsec:mean]{plots} below. Note that for \textit{pytree2040}, the number of events is too large for a personal computer at today's scale to handle. Hence, the dataset of this multiplicity class has been randomized and the first \textbf{40\%} has been used for analysis.
 
-%\pagebreak
+\pagebreak
 %\newpage
 
 \subsubsection{Summary of Data}
@@ -326,7 +359,6 @@ The table below summarizes the data.
 \end{table}
 
 \FloatBarrier
-\pagebreak
 \subsubsection{Mean Transverse Momentum versus Multiplicity Class}
 \label{subsubsec:mean}
 \vspace{-5mm}
@@ -363,7 +395,6 @@ The table below summarizes the data.
 
 \FloatBarrier
 \vspace{-3mm}
-\pagebreak
 
 \subsubsection{Standardized Skewness of Transverse Momentum versus Multiplicity Class}
 \label{subsubsec:stdskew}
@@ -399,27 +430,6 @@ The table below summarizes the data.
 \end{minipage}
 \end{figure}
 
-\pagebreak
-
-
-
-
-
-
-
-
-\newpage
-\begin{figure*}
-\begin{center}
-%\includegraphics[scale=0.8]{ppspectra.eps}
-\caption{(Color online) Put proper captions}
-\label{f1}
-\end{center}
-\end{figure*}
-
-
-
-
 
 
 
@@ -427,7 +437,14 @@ The table below summarizes the data.
 
 \section{Summary}
 
-The study of  $\cdots$
+The study of the mean transverse momentum $\mathbf{\langle p_T\rangle }$ of emitted particles in ultra-relativistic nucleus collisions fluctuates from one event to another. We have shown the various statistical and dynamical fluctuations is been reflected on distribution of the <pt>. It very clear that the function of $\mathbf{\langle p_T\rangle }$ verses collision count tends to have an \textbf{Exponential fit} and having a \textbf{positive skewness in Gaussian fit}. Hydrodynamics predicts that the event-by-event fluctuations of the mean transverse momentum, $\mathbf{\langle p_T\rangle }$, have positive skew. And fluctuation can be calculated in terms of standard skewness and intensive skewness. At centre of mass energy \textbf{13 TeV} for \textbf{p+p collision} the standard skewness tends to have values between \textbf{1.2 to 4.2 GeV/c} and intensive skewness having values between \textbf{5.2 to 31.2} for corresponding multiplicity classes. For the multiplicity class \textit{pytree80100} it shows a dip in value of skewness. This could be for several reasons. Some of then are mentioned below.
+\begin{enumerate}[label=(\roman*)]
+\itemsep0em 
+\item The events are simulated using a Monte Carlo Generator, which in some extreme cases produce data sets that are very close to the mean (having very few outliers)
+\item The number of events in \textit{pytree80100} is much less than the previous multiplicity classes, as is seen from the \hyperref[subsubsec:summary]{table}
+\item As seen from \hyperref[Fig:5b]{FIG. 5b.}, the histogram of the distribution of $\mathbf{\langle p_T\rangle }$ has a steep decreasing slope to the right side of the peak, which is indicative of higher resemblance to a Gaussian fit. This might occur due to the finite size of the data. 
+\end{enumerate}
+
 
 
 \begin{thebibliography}{50}
